@@ -13,9 +13,9 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
+Plug 'xuyuanp/nerdtree-git-plugin'
 Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdcommenter'
-Plug 'xuyuanp/nerdtree-git-plugin'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'jiangmiao/auto-pairs'
@@ -24,6 +24,7 @@ Plug 'valloric/youcompleteme'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'bronson/vim-trailing-whitespace'
+Plug 'haya14busa/incsearch.vim'
 "Plug 'easymotion/vim-easymotion'
 "Plug 'tpope/vim-fugitive'
 "Plug 'sirver/ultisnips'
@@ -101,6 +102,8 @@ set softtabstop=4
 set hidden
 set showmatch
 set lazyredraw
+
+set incsearch
 set hlsearch
 
 set ignorecase
@@ -187,7 +190,7 @@ let g:vim_json_syntax_conceal = 0
 " ************************************
 " javascript libraries syntax
 " ************************************
-let g:used_javascript_libs = 'react,angular'
+"let g:used_javascript_libs = 'react,angular'
 
 " ************************************
 " air line
