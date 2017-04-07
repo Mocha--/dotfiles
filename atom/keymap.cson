@@ -1,7 +1,5 @@
 # Your keymap
-#
-# Atom keymaps work similarly to style sheets. Just as style sheets use
-# selectors to apply styles to elements, Atom keymaps use selectors to associate
+# # Atom keymaps work similarly to style sheets. Just as style sheets use # selectors to apply styles to elements, Atom keymaps use selectors to associate
 # keystrokes with events in specific contexts. Unlike style sheets however,
 # each selector can only be declared once.
 #
@@ -25,16 +23,15 @@
 # If you are unfamiliar with CSON, you can read more about it in the
 # Atom Flight Manual:
 # https://atom.io/docs/latest/using-atom-basic-customization#cson
-
 # overwrite default keymap
-'atom-text-editor:not([mini])':
-    'tab': 'unset!'
-    'enter': 'unset!'
 
 # treeview
 '.tree-view':
   'o': 'tree-view:open-selected-entry'
   'tab': 'tree-view:toggle-focus'
+
+'atom-text-editor.vim-mode-plus.insert-mode.autocomplete-active':
+  'tab': 'autocomplete-plus:confirm'
 
 # keymap for vim
 'atom-text-editor.vim-mode-plus.insert-mode':
@@ -43,8 +40,10 @@
   'tab': 'editor:indent'
 
 'atom-text-editor.vim-mode-plus:not(.insert-mode)':
-  'ctrl-k': 'vim-mode-plus:scroll-half-screen-up'
-  'ctrl-j': 'vim-mode-plus:scroll-half-screen-down'
-  'ctrl-h': 'pane:show-previous-item'
-  'ctrl-l': 'pane:show-next-item'
+  'shift-k': 'Mooocha:move-10-lines-up'
+  'shift-j': 'Mooocha:move-10-lines-down'
+  'shift-h': 'pane:show-previous-item'
+  'shift-l': 'pane:show-next-item'
   'tab': 'tree-view:toggle-focus'
+  'shift-w': 'Mooocha:move-to-beginning-of-next-3-words'
+  'shift-b': 'Mooocha:move-to-beginning-of-previous-3-words'
