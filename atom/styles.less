@@ -1,0 +1,340 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed and saved.
+ *
+ * Add your own CSS or Less to fully customize Atom.
+ * If you are unfamiliar with Less, you can read more about it here:
+ * http://lesscss.org
+ */
+
+
+/*
+ * Examples
+ * (To see them, uncomment and save)
+ */
+
+// style the background and foreground colors on the atom-text-editor-element itself
+atom-text-editor {
+
+  // prevention of horizontal scroll bar
+  autocomplete-suggestion-list {
+      .suggestion-list-scroller {
+          overflow-x: hidden
+      }
+  }
+}
+
+// To style other content in the text editor's shadow DOM, use the ::shadow expression
+atom-text-editor::shadow .cursor {
+  // border-color: red;
+}
+
+@fontSize: 20px;
+@pink: #C2185B;
+@orange: #F57C00;
+@teal500: #009688;
+@teal600: #00897B;
+@teal700: #00796B;
+@teal800: #00695C;
+@teal900: #004D40;
+@blueGrey800: #37474F;
+@triangelWidth: 15px;
+html, body, .tree-view, .tab-bar .tab {
+    font-size: @fontSize;
+      
+    .status-bar {
+        font-size: @fontSize;
+        height: 60px;
+
+        .icon::before {
+            font-size: @fontSize;
+            margin: 0 10px 0 0;
+        }
+        
+        .flexbox-repaint-hack {
+            padding: 15px 0;
+            
+            .status-bar-left {
+                flex: 0 0 auto;
+                display: flex;
+                overflow: visible;
+                line-height: 30px;
+                
+                status-bar-file {
+                    order: 0;
+                    display: none;
+                }
+                
+                .linter-status-count {
+                    z-index: 3;
+                    position: relative;
+                    order: 1;
+                    padding: 0;
+                    margin: 0;
+                    overflow: visible;
+                    &::after {
+                        content: ' ';
+                        position: absolute;
+                        top: 0;
+                        left: 100%;
+                        width: 0;
+                        height: 0;
+                        border-top: @triangelWidth solid transparent;
+                        border-bottom: @triangelWidth solid transparent;
+                        border-left: @triangelWidth solid @teal900;
+                    }
+                    
+                    a {
+                        display: inline-block;
+                        padding: 0 10px;
+                        color: rgba(251, 241, 199, 0.8);
+                        &:first-child {
+                            background: @pink;
+                        }
+                        
+                        &:nth-child(2) {
+                            background: @orange;
+                        }
+                        
+                        &:last-child {
+                            background: @teal900;
+                        }
+                        
+                        .icon {
+                            display: none;
+                        }
+                    }
+                }
+                
+                status-bar-cursor {
+                    z-index: 2;
+                    position: relative;
+                    order: 2;
+                    width: 110px;
+                    padding: 0 0 0 20px;
+                    margin: 0;
+                    overflow: visible;
+                    text-align: center;
+                    background: @teal800;
+                    a {
+                        margin: 0;
+                    }
+                    &::after {
+                        content: ' ';
+                        position: absolute;
+                        top: 0;
+                        left: 100%;
+                        width: 0;
+                        height: 0;
+                        border-top: @triangelWidth solid transparent;
+                        border-bottom: @triangelWidth solid transparent;
+                        border-left: @triangelWidth solid @teal800;
+                    }
+                }
+                
+                status-bar-selection {
+                    display: none;
+                }
+                
+                .highlight-selected-status {
+                    display: none;
+                }
+            }
+            
+            .status-bar-right {
+                flex: 1 1 auto;
+                display: flex;
+                justify-content: flex-end;
+                padding: 0;
+                line-height: 30px;
+                
+                #aec-status-bar-container {
+                    display: none;
+                }
+                
+                busy-signal {
+                    display: none!important;
+                }
+                
+                status-bar-git {
+                    display: none;
+                }
+                
+                ts-status-panel {
+                    display: none;
+                }
+                
+                #status-bar-vim-mode-plus-container {
+                    width: 130px;
+                    margin: 0 auto 0 0;
+                    overflow: visible;
+                    text-align: center;
+                    font-weight: 700;
+                    white-space: normal;
+                    word-wrap: break-word;
+                    text-transform: uppercase;
+                    
+                    #status-bar-vim-mode-plus {
+                        position: relative;
+                        padding: 0 10px 0 20px;
+                        &::after {
+                            content: ' ';
+                            position: absolute;
+                            top: 0;
+                            left: 100%;
+                            width: 0;
+                            height: 0;
+                            border-top: @triangelWidth solid transparent;
+                            border-bottom: @triangelWidth solid transparent;
+                        }
+                        &.status-bar-vim-mode-plus-normal {
+                            background: @teal700;
+                            &::after {
+                                border-left: @triangelWidth solid @teal700;
+                            }
+                        }
+                        &.status-bar-vim-mode-plus-insert {
+                            background: @pink;
+                            &::after {
+                                border-left: @triangelWidth solid @pink;
+                            }
+                        }
+                        &.status-bar-vim-mode-plus-visual {
+                            background: @orange;
+                            &::after {
+                                border-left: @triangelWidth solid @orange
+                            }
+                        }
+                    }
+                }
+                
+                grammar-selector-status {
+                    z-index: 1;
+                    position: relative;
+                    order: 1;
+                    padding: 0 25px 0 10px;
+                    margin: 0;
+                    overflow: visible;
+                    background: @teal600;
+                    &::after {
+                        content: ' ';
+                        position: absolute;
+                        top: 0;
+                        right: 100%;
+                        width: 0;
+                        height: 0;
+                        border-top: @triangelWidth solid transparent;
+                        border-bottom: @triangelWidth solid transparent;
+                        border-right: @triangelWidth solid @teal600;
+                    }
+                    a {
+                        margin: 0;
+                    }
+                }
+                
+                .line-ending-tile {
+                    z-index: 2;
+                    position: relative;
+                    order: 2;
+                    padding: 0 25px 0 10px;
+                    margin: 0;
+                    overflow: visible;
+                    background: @teal700;
+                    &::after {
+                        content: ' ';
+                        position: absolute;
+                        top: 0;
+                        right: 100%;
+                        width: 0;
+                        height: 0;
+                        border-top: @triangelWidth solid transparent;
+                        border-bottom: @triangelWidth solid transparent;
+                        border-right: @triangelWidth solid @teal700;
+                    }
+                }
+                
+                encoding-selector-status {
+                    z-index: 3;
+                    position: relative;
+                    order: 3;
+                    padding: 0 25px 0 10px;
+                    margin: 0;
+                    overflow: visible;
+                    background: @teal800;
+                    &::after {
+                        content: ' ';
+                        position: absolute;
+                        top: 0;
+                        right: 100%;
+                        width: 0;
+                        height: 0;
+                        border-top: @triangelWidth solid transparent;
+                        border-bottom: @triangelWidth solid transparent;
+                        border-right: @triangelWidth solid @teal800;
+                    }
+                    a {
+                        margin: 0;
+                    }
+                }
+                
+                .atom-clock {
+                    z-index: 4;
+                    position: relative;
+                    order: 4;
+                    padding: 0 25px 0 10px;
+                    margin: 0;
+                    background: @teal900;
+                    &::after {
+                        content: ' ';
+                        position: absolute;
+                        top: 0;
+                        right: 100%;
+                        width: 0;
+                        height: 0;
+                        border-top: @triangelWidth solid transparent;
+                        border-bottom: @triangelWidth solid transparent;
+                        border-right: @triangelWidth solid @teal900;
+                    }
+                }
+                
+                .package-updates-status-view {
+                    z-index: 5;
+                    position: relative;
+                    order: 5;
+                    padding: 0 10px;
+                    margin: 0;
+                    overflow: visible;
+                    background: @blueGrey800;
+                    &::after {
+                        content: ' ';
+                        position: absolute;
+                        top: 0;
+                        right: 100%;
+                        width: 0;
+                        height: 0;
+                        border-top: @triangelWidth solid transparent;
+                        border-bottom: @triangelWidth solid transparent;
+                        border-right: @triangelWidth solid @blueGrey800;
+                    }
+                }
+            }
+        }
+    }
+
+    // style the background color of the tree view
+    .tree-view {
+        overflow: auto;
+        &::-webkit-scrollbar {
+            width: 10px;
+        }
+    }
+    
+    atom-text-editor {
+        .vertical-scrollbar {
+            width: 10px!important;
+        }
+    }
+}
+
