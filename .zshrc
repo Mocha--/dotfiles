@@ -1,25 +1,33 @@
-# Path to your oh-my-zsh installation.
-  export ZSH=/home/mocha/.oh-my-zsh
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
+# Path to your oh-my-zsh installation.
+export ZSH=/Users/mooocha/.oh-my-zsh
+
+# Set name of the theme to load. Optionally, if you set this to "random"
+# it'll load a random theme each time that oh-my-zsh is loaded.
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="bullet-train"
 
-BULLETTRAIN_PROMPT_CHAR='>'
+BULLETTRAIN_PROMPT_CHAR='>>'
 BULLETTRAIN_PROMPT_ROOT=true
 BULLETTRAIN_CONTEXT_SHOW=true
-BULLETTRAIN_CONTEXT_BG='132'
-BULLETTRAIN_CONTEXT_FG=white
-BULLETTRAIN_TIME_BG='078'
-BULLETTRAIN_DIR_BG='006'
+BULLETTRAIN_CONTEXT_BG='29'
+#BULLETTRAIN_CONTEXT_BG='66'
 BULLETTRAIN_PROMPT_ORDER=(
     context
     time
     dir
     git
 )
+
+# Set list of themes to load
+# Setting this variable when ZSH_THEME=random
+# cause zsh load theme from this variable instead of
+# looking in ~/.oh-my-zsh/themes/
+# An empty array have no effect
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -62,14 +70,20 @@ BULLETTRAIN_PROMPT_ORDER=(
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+  git
+  autojump
+  extract
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+  zsh-completions
+)
+
+source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-  export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
-
-source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -85,7 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
+# export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -94,16 +108,19 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
-
+# alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim=nvim
 alias c=clear
-alias ag=ack-grep
-alias chrome=google-chrome-stable
-# git log graph
-git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias e=exit
+alias deployVenuePortal='scp -i ~/.ssh/amazon/dzzAmazon.pem -r ~/Projects/kakku/ks-venue-portal/dist ubuntu@mooocha.me:/home/ubuntu/www/ks-venue-portal'
 
-# autojump
-[[ -s /home/mocha/.autojump/etc/profile.d/autojump.sh ]] && source /home/mocha/.autojump/etc/profile.d/autojump.sh
+autoload -U compinit && compinit
 
-autoload -U compinit && compinit -u
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

@@ -20,7 +20,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'jiangmiao/auto-pairs'
 Plug 'marijnh/tern_for_vim'
-Plug 'valloric/youcompleteme'
+"Plug 'valloric/youcompleteme'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'bronson/vim-trailing-whitespace'
@@ -54,7 +54,7 @@ Plug 'elzr/vim-json'
 " html
 " ------------
 Plug 'othree/html5.vim'
-Plug 'valloric/matchtagalways'
+"Plug 'valloric/matchtagalways'
 Plug 'alvan/vim-closetag'
 
 " ------------
