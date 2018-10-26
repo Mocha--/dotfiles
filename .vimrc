@@ -11,9 +11,9 @@ call plug#begin('~/.vim/plugged')
 " make it like IDE
 " ----------
 
-Plug 'scrooloose/nerdtree'
-Plug 'jistr/vim-nerdtree-tabs'
-Plug 'xuyuanp/nerdtree-git-plugin'
+"Plug 'scrooloose/nerdtree'
+"Plug 'jistr/vim-nerdtree-tabs'
+"Plug 'xuyuanp/nerdtree-git-plugin'
 Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdcommenter'
 Plug 'vim-airline/vim-airline'

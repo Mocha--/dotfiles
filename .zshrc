@@ -72,11 +72,16 @@ BULLETTRAIN_PROMPT_ORDER=(
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  autojump
+  autojump #need installation
   extract
-  zsh-autosuggestions
-  zsh-completions
-  zsh-syntax-highlighting
+  brew
+  zsh-nvm #need installation
+  web-search
+  npm
+  zsh-better-npm-completion #need installation
+  zsh-autosuggestions #need installation
+  zsh-completions #need installation
+  zsh-syntax-highlighting #need installation; must be the last element in plugins
 )
 
 source $ZSH/oh-my-zsh.sh
