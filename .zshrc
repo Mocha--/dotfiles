@@ -72,16 +72,16 @@ BULLETTRAIN_PROMPT_ORDER=(
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  autojump #need installation
+  autojump
   extract
   brew
-  zsh-nvm #need installation
+  zsh-nvm
   web-search
   npm
-  zsh-better-npm-completion #need installation
-  zsh-autosuggestions #need installation
-  zsh-completions #need installation
-  zsh-syntax-highlighting #need installation; must be the last element in plugins
+  zsh-better-npm-completion
+  zsh-autosuggestions
+  zsh-completions
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -117,6 +117,7 @@ source $ZSH/oh-my-zsh.sh
 alias vim=nvim
 alias c=clear
 alias e=exit
+alias g=google
 alias deployVenuePortal='scp -i ~/.ssh/amazon/dzzAmazon.pem -r ~/Projects/kakku/ks-venue-portal/dist ubuntu@mooocha.me:/home/ubuntu/www/ks-venue-portal'
 
 autoload -U compinit && compinit
