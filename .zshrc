@@ -9,7 +9,7 @@ export ZSH=/Users/mooocha/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="bullet-train"
 
-BULLETTRAIN_PROMPT_CHAR='>>'
+BULLETTRAIN_PROMPT_CHAR='>>>'
 BULLETTRAIN_PROMPT_ROOT=true
 BULLETTRAIN_CONTEXT_SHOW=true
 BULLETTRAIN_CONTEXT_BG='29'
