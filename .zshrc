@@ -74,7 +74,6 @@ plugins=(
   git
   autojump
   extract
-  brew
   zsh-nvm
   web-search
   npm
@@ -118,7 +117,6 @@ alias vim=nvim
 alias c=clear
 alias e=exit
 alias g=google
-alias deployVenuePortal='scp -i ~/.ssh/amazon/dzzAmazon.pem -r ~/Projects/kakku/ks-venue-portal/dist ubuntu@mooocha.me:/home/ubuntu/www/ks-venue-portal'
 
 autoload -U compinit && compinit
 
