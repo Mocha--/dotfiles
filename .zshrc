@@ -84,6 +84,7 @@ plugins=(
   zsh-nvm
   web-search
   npm
+  docker
   zsh-better-npm-completion
   zsh-autosuggestions
   zsh-completions
@@ -118,11 +119,14 @@ plugins=(
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vim=nvim
-alias c=clear
-alias e=exit
-alias g=google
 
 autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
+
+alias vim=nvim
+alias c=clear
+alias e=exit
+alias g=google
+alias gl='git lg'
+alias glog='git lg'
