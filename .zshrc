@@ -8,12 +8,10 @@ export ZSH=/Users/mooocha/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="bullet-train"
-
 BULLETTRAIN_PROMPT_CHAR='>>>'
 BULLETTRAIN_PROMPT_ROOT=true
 BULLETTRAIN_CONTEXT_SHOW=true
 BULLETTRAIN_CONTEXT_BG='29'
-#BULLETTRAIN_CONTEXT_BG='66'
 BULLETTRAIN_PROMPT_ORDER=(
     context
     time
@@ -68,10 +66,11 @@ BULLETTRAIN_PROMPT_ORDER=(
 
 # Environment Variables
 export NVM_AUTO_USE=true
-export NODE_OPTIONS=--max_old_space_size=4096
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export NODE_OPTIONS=--max_old_space_size=4096
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
