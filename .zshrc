@@ -65,12 +65,11 @@ BULLETTRAIN_PROMPT_ORDER=(
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
 # Environment Variables
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 export NVM_AUTO_USE=true
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# export NODE_OPTIONS=--max_old_space_size=4096
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -119,6 +118,9 @@ plugins=(
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# extra config for zsh-completions
+fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 
 autoload -U compinit && compinit
 
