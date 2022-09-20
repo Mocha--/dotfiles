@@ -1,3 +1,5 @@
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -71,6 +73,11 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+
+# export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+# export NODE_OPTIONS=--max_old_space_size=4096
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -81,13 +88,14 @@ plugins=(
     extract
     zsh-nvm
     web-search
-    npm
+    #npm
     docker
     docker-compose
-    zsh-better-npm-completion
-    zsh-autosuggestions
-    zsh-completions
+    #zsh-better-npm-completion
+    #zsh-autosuggestions
+    #zsh-completions
     zsh-syntax-highlighting
+    #k
 )
 
 # User configuration
@@ -120,7 +128,7 @@ plugins=(
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # extra config for zsh-completions
-fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
+# fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 
 autoload -U compinit && compinit
 
@@ -133,3 +141,13 @@ alias g=google
 alias gl='git lg'
 alias glog='git lg'
 alias co=code
+
+# bun completions
+[ -s "/Users/xibo.wang/.bun/_bun" ] && source "/Users/xibo.wang/.bun/_bun"
+
+# bun
+export BUN_INSTALL="/Users/xibo.wang/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
