@@ -1,11 +1,11 @@
 " ####################################
-" Moocha's vimrc
+" Mooocha's vimrc
 " ####################################
 
 " ------------------------------------
 " Plugins
 " ------------------------------------
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 
 " ----------
 " make it like IDE
