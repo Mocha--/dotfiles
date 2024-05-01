@@ -1,25 +1,20 @@
-# Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
-# If you come from bash you might have to change your $PATH.
+# Q pre block. Keep at the top of this file.
+[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh"
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+    source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/mooocha/.oh-my-zsh
+export ZSH=/Users/xibo.wang/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="bullet-train"
-BULLETTRAIN_PROMPT_CHAR='>>>'
-BULLETTRAIN_PROMPT_ROOT=true
-BULLETTRAIN_CONTEXT_SHOW=true
-BULLETTRAIN_CONTEXT_BG='29'
-BULLETTRAIN_PROMPT_ORDER=(
-    context
-    time
-    dir
-    git
-)
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -67,16 +62,12 @@ BULLETTRAIN_PROMPT_ORDER=(
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
 # Environment Variables
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/usr/local/Cellar/mysql-client/8.0.31/bin"
+export PATH="/opt/homebrew/bin:$PATH"
 export NVM_AUTO_USE=true
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-
-# export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-
-# export NODE_OPTIONS=--max_old_space_size=4096
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -84,7 +75,7 @@ export NVM_DIR="$HOME/.nvm"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     git
-    autojump
+    #autojump
     extract
     zsh-nvm
     web-search
@@ -95,6 +86,8 @@ plugins=(
     #zsh-autosuggestions
     #zsh-completions
     zsh-syntax-highlighting
+    you-should-use
+    #pnpm
     #k
 )
 
@@ -134,6 +127,9 @@ autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
 
+# setup zoxide
+eval "$(zoxide init zsh)"
+
 alias vim=nvim
 alias c=clear
 alias e=exit
@@ -141,6 +137,28 @@ alias g=google
 alias gl='git lg'
 alias glog='git lg'
 alias co=code
+alias python=python3
+
+# exa
+alias ls='exa --icons'
+
+# vudoo db alias
+alias vudoo_current_commerce='sh ~/projects/vudoo-sql-scripts/current-commerce-105893.sh'
+alias vudoo_switch_shopify='sh ~/projects/vudoo-sql-scripts/create-shopify-105881.sh'
+alias vudoo_switch_salesforce_braintree='sh ~/projects/vudoo-sql-scripts/create-salesforce-braintree-105893.sh'
+alias vudoo_switch_salesforce_adyen='sh ~/projects/vudoo-sql-scripts/create-salesforce-adyen-105893.sh'
+alias vudoo_switch_bigcommerce_stripe='sh ~/projects/vudoo-sql-scripts/create-bigcommerce-stripe-105893.sh'
+alias vudoo_switch_bigcommerce_adyen='sh ~/projects/vudoo-sql-scripts/create-bigcommerce-adyen-105893.sh'
+alias vudoo_switch_magento_stripe='sh ~/projects/vudoo-sql-scripts/create-magento-stripe-105893.sh'
+alias vudoo_switch_magento_braintree='sh ~/projects/vudoo-sql-scripts/create-magento-braintree-105893.sh'
+alias vudoo_switch_magento_adyen='sh ~/projects/vudoo-sql-scripts/create-magento-adyen-105893.sh'
+alias vudoo_switch_magento_cybersource='sh ~/projects/vudoo-sql-scripts/create-magento-cybersource-105893.sh'
+alias vudoo_switch_magento_cybersource_onsite='sh ~/projects/vudoo-sql-scripts/create-magento-cybersource-onsite-105893.sh'
+alias vudoo_switch_amazon_product_advertising='sh ~/projects/vudoo-sql-scripts/create-amazon-product-advertising-105893.sh'
+alias vudoo_switch_amazon_anywhere='sh ~/projects/vudoo-sql-scripts/create-amazon-anywhere-105893.sh'
+alias vudoo_clear_commerce_integration='sh ~/projects/vudoo-sql-scripts/delete-105893-integrations.sh'
+alias vudoo_clear_redis='sh ~/projects/vudoo-sql-scripts/clear-redis.sh'
+alias vudoo_rm_node_modules='rm -rf frontend-packages/brightcove-plugin/node_modules frontend-packages/content-cart-embed/node_modules frontend-packages/gate-validator/node_modules frontend-packages/mxo-frame/node_modules frontend-packages/shopify-integration-app/node_modules frontend-packages/shoppable/node_modules frontend-packages/shoppable/playground/node_modules frontend-packages/shoppable-sdk/node_modules frontend-packages/v-tracker/node_modules public_html/react/node_modules public_html/react/ContentCart/node_modules node_modules'
 
 # bun completions
 [ -s "/Users/xibo.wang/.bun/_bun" ] && source "/Users/xibo.wang/.bun/_bun"
@@ -149,5 +167,11 @@ alias co=code
 export BUN_INSTALL="/Users/xibo.wang/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+# yarn
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Q post block. Keep at the bottom of this file.
+[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
