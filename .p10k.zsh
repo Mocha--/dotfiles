@@ -222,7 +222,7 @@
 
   ##################################[ dir: current directory ]##################################
   # Current directory background color.
-  typeset -g POWERLEVEL9K_DIR_BACKGROUND=4
+  typeset -g POWERLEVEL9K_DIR_BACKGROUND=012
   # Default current directory foreground color.
   typeset -g POWERLEVEL9K_DIR_FOREGROUND=254
   # If directory is too long, shorten some of its segments to the shortest possible unique
@@ -361,11 +361,11 @@
 
   #####################################[ vcs: git status ]######################################
   # Version control background colors.
-  typeset -g POWERLEVEL9K_VCS_CLEAN_BACKGROUND=3
-  typeset -g POWERLEVEL9K_VCS_MODIFIED_BACKGROUND=3
-  typeset -g POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND=3
-  typeset -g POWERLEVEL9K_VCS_CONFLICTED_BACKGROUND=3
-  typeset -g POWERLEVEL9K_VCS_LOADING_BACKGROUND=3
+  typeset -g POWERLEVEL9K_VCS_CLEAN_BACKGROUND=003
+  typeset -g POWERLEVEL9K_VCS_MODIFIED_BACKGROUND=003
+  typeset -g POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND=003
+  typeset -g POWERLEVEL9K_VCS_CONFLICTED_BACKGROUND=003
+  typeset -g POWERLEVEL9K_VCS_LOADING_BACKGROUND=003
 
   # Branch icon. Set this parameter to '\UE0A0 ' for the popular Powerline branch icon.
   typeset -g POWERLEVEL9K_VCS_BRANCH_ICON='\uF126 '
@@ -406,7 +406,7 @@
       # If local branch name is at most 32 characters long, show it in full.
       # Otherwise show the first 12 … the last 12.
       # Tip: To always show local branch name in full without truncation, delete the next line.
-      (( $#branch > 32 )) && branch[13,-13]="…"  # <-- this line
+      # (( $#branch > 32 )) && branch[13,-13]="…"  # <-- this line
       res+="${clean}${(g::)POWERLEVEL9K_VCS_BRANCH_ICON}${branch//\%/%%}"
     fi
 
