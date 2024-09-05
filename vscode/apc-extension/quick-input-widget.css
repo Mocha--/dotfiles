@@ -1,0 +1,61 @@
+.quick-input-widget {
+  --quick-input-widget-width: 1280px;
+  --quick-input-widget-height: 56%;
+  inset: 0 !important;
+  display: flex;
+  flex-direction: column;
+  width: min(80%, var(--quick-input-widget-width)) !important;
+  block-size: var(--quick-input-widget-height) !important;
+  padding: 16px;
+  border: 0 !important;
+  border-radius: 16px !important;
+  margin: auto !important;
+  box-shadow: none !important;
+  background: var(--quick-input-widget-bg) !important;
+
+  &:has(.quick-input-html-widget > .interactive-session) {
+    --quick-input-widget-height: calc(100% - 80px);
+  }
+
+  .quick-input-header {
+    flex: 0 0 auto;
+    padding: 0 !important;
+    margin-block-end: 16px;
+
+    .quick-input-box .monaco-inputbox {
+      border: none !important;
+      border-radius: 8px !important;
+      outline: none !important;
+      background: var(--quick-input-widget-textfield-bg) !important;
+    }
+
+    .quick-input-filter .monaco-inputbox > .ibwrapper > .input {
+      height: 48px;
+      padding: 0 8px;
+    }
+  }
+
+  .quick-input-list {
+    flex: 1 1 0%;
+    min-block-size: 0;
+
+    .monaco-list {
+      max-height: none !important;
+      padding: 0 !important;
+
+      .monaco-scrollable-element {
+        padding: 0 !important;
+      }
+
+      .monaco-list-rows {
+        background: transparent !important;
+      }
+
+      .scrollbar {
+        .slider {
+          background: rgba(128, 128, 128, .5) !important;
+        }
+      }
+    }
+  }
+}
