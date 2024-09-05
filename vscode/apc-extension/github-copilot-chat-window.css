@@ -1,0 +1,142 @@
+.quick-input-widget {
+  .quick-input-html-widget {
+    &:has(> .interactive-session) {
+      flex: 1 1 0%;
+      min-block-size: 0;
+    }
+
+    .interactive-session {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      max-width: none !important;
+      inline-size: 100%;
+      block-size: 100%;
+
+      .monaco-sash {
+        display: none;
+      }
+
+      .interactive-list {
+        order: 0;
+        flex: 1 1 0%;
+        height: auto !important;
+        min-block-size: 0;
+        font-size: 14px;
+
+        .monaco-scrollable-element {
+          border-radius: 8px;
+        }
+
+        .monaco-list-rows {
+          .interactive-request {
+            background: var(--vim-insert-color);
+            border: 0;
+          }
+        }
+      }
+
+      .interactive-result-editor {
+        .view-lines {
+          font-size: 14px !important;
+        }
+      }
+
+      .interactive-input-part {
+        order: 1;
+        flex: 0 0 auto;
+        padding: 0;
+        margin: auto 0 0;
+      }
+
+      .interactive-input-and-side-toolbar {
+        gap: 16px !important;
+      }
+
+      .interactive-input-and-execute-toolbar {
+        box-sizing: border-box;
+        align-items: center;
+        flex: 1 1 0%;
+        min-inline-size: 0;
+        padding: 0 16px;
+        border: 0;
+        border-radius: 8px;
+        background: var(--quick-input-widget-textfield-bg);
+
+        .monaco-toolbar {
+          margin: 0 !important;
+        }
+      }
+
+      .interactive-input-editor {
+        flex: 1 1 0%;
+        min-inline-size: 0;
+
+        .monaco-editor {
+          width: 100% !important;
+          height: 48px !important;
+          background: transparent !important;
+
+          .overflow-guard {
+            width: 100% !important;
+            height: 100% !important;
+          }
+
+          .monaco-scrollable-element {
+            width: 100% !important;
+            height: 100% !important;
+          }
+
+          .lines-content {
+            inset: 0;
+            width: 100% !important;
+            height: 100% !important;
+            background: transparent !important;
+          }
+
+          .view-overlays {
+            inset: 0;
+            width: 100% !important;
+            height: 100% !important;
+            pointer-events: none;
+
+            /* text selection */
+            > div {
+              inset: 0 !important;
+              margin: auto 0;
+              height: 24px !important;
+            }
+          }
+
+          /* text */
+          .view-lines {
+            inset: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            font-family: var(--custom-font-family) !important;
+
+            .view-line {
+              inset: 0 !important;
+              margin: auto 0;
+              height: 24px !important;
+              line-height: 24px;
+            }
+          }
+
+          .cursors-layer {
+            inset: 0 auto;
+            margin: auto 0;
+          }
+
+          .cursor {
+            top: 0 !important;
+            bottom: 0 !important;
+            margin: auto 0;
+            height: 24px !important;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+}
