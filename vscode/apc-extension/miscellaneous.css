@@ -1,0 +1,20 @@
+/*
+****************************************
+* list row fix
+****************************************
+*/
+.quick-input-list .quick-input-list-rows>.quick-input-list-row .monaco-icon-label {
+  align-items: center;
+}
+
+.search-view .filematch .monaco-icon-label {
+  align-items: center;
+}
+
+.scm-view .monaco-list-rows .monaco-list-row .monaco-icon-label {
+  align-items: center;
+}
+
+.scm-view .monaco-list-row .monaco-icon-label-container {
+  height: unset !important;
+}
