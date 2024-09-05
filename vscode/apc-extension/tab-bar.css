@@ -1,0 +1,22 @@
+.title.tabs {
+  > .tabs-and-actions-container::after {
+    display: none;
+  }
+
+  .tab {
+    border-radius: 8px;
+
+    .tab-border-bottom-container {
+      display: none !important;
+    }
+
+    .monaco-icon-label::before {
+      width: 24px;
+      background-size: 24px;
+    }
+  }
+
+  .editor-actions {
+    display: none;
+  }
+}

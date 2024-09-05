@@ -1,0 +1,22 @@
+.sidebar {
+  border: 0 !important;
+
+  > .content {
+    height: 100% !important;
+  }
+
+  .title .title-label > h2 {
+    font-weight: 600 !important;
+  }
+
+  .monaco-icon-label {
+    &::before {
+      width: 20px !important;
+      background-size: 20px !important;
+    }
+
+    &::after {
+      margin-top: 0 !important;
+    }
+  }
+}
