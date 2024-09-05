@@ -1,0 +1,18 @@
+:root {
+  --vim-normal-color: #52796f;
+  --vim-insert-color: #6D3C52;
+  --vim-visual-color: #db6904;
+  --vim-command-color: #6E546C;
+  --vim-search-color: #ab4d35;
+  --quick-input-widget-bg1: #305352;
+  --quick-input-widget-bg: #574963;
+  --quick-input-widget-textfield-bg: #6E546C;
+  --vim-mode-order: 1;
+  --vim-command-order: 2;
+  --source-control-order: 3;
+  --editor-selection-order: 4;
+  --problems-order: 5;
+  --github-copilot-order: 8;
+  --clock-order: 6;
+  --battery-order: 7;
+}
