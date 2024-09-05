@@ -1,0 +1,25 @@
+.monaco-hover {
+  .monaco-hover-content {
+    display: flex;
+    flex-direction: column;
+
+    &:has(.codicon-none),
+    &:has([style="color:#f96363;"]) {
+      > .hover-row:first-child {
+        display: none !important;
+      }
+    }
+
+    .hover-row {
+      order: 3;
+
+      &:has(.codicon-none) {
+        order: 2;
+      }
+
+      &:has([style="color:#f96363;"]) {
+        order: 1;
+      }
+    }
+  }
+}
