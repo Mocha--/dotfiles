@@ -1,0 +1,8 @@
+body > .monaco-workbench[role=application]:has(.quick-input-widget:not([style*='display: none;']))::before {
+  content: '';
+  z-index: 100;
+  position: absolute;
+  inset: 0;
+  background: rgba(64, 64, 64, .25);
+  backdrop-filter: blur(2px);
+}
