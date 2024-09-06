@@ -12,201 +12,222 @@
     .monaco-list-row {
       margin-inline-start: -2px !important; /* for some reason, there is a 2px offset each row, just offset it 2px left */
       width: calc(100% + 2px) !important;
-    }
 
-    /**
-    * suggestion-icon
-    */
-    .codicon {
-      &[class*="codicon-"] {
-        display: inline-flex !important;
+      .main .left .monaco-icon-label::before {
+        width: auto;
+        height: 100%;
+        aspect-ratio: 1 / 1;
+        padding: 0;
+        margin-right: 8px;
+        background-size: 60%;
+        background-position: 40% 40%;
+        background-color: var(--background-operator);
+      }
+
+      .icon.customcolor {
+        display: inline-flex;
         align-items: center;
         justify-content: center;
-        height: 100% !important;
-        width: auto !important;
-        aspect-ratio: 1 / 1;
-        padding: 0 !important;
-        font-size: 20px;
-        margin: 0 8px 0 0 !important;
+
+        > .colorspan {
+          margin: 0;
+        }
       }
 
-      &[class*="codicon-symbol-attribute"] {
-        color: var(--color-attribute) !important;
-        background: var(--background-attribute);
-      }
+      /**
+      * suggestion-icon
+      */
+      .codicon {
+        &[class*="codicon-"] {
+          display: inline-flex !important;
+          align-items: center;
+          justify-content: center;
+          height: 100% !important;
+          width: auto !important;
+          aspect-ratio: 1 / 1;
+          padding: 0 !important;
+          font-size: 20px;
+          margin: 0 8px 0 0 !important;
+        }
 
-      &[class*="codicon-symbol-builtin"] {
-        color: var(--color-builtin) !important;
-        background: var(--background-builtin);
-      }
+        &[class*="codicon-symbol-attribute"] {
+          color: var(--color-attribute) !important;
+          background: var(--background-attribute);
+        }
 
-      &[class*="codicon-symbol-class"] {
-        color: var(--color-class) !important;
-        background: var(--background-class);
-      }
+        &[class*="codicon-symbol-builtin"] {
+          color: var(--color-builtin) !important;
+          background: var(--background-builtin);
+        }
 
-      &[class*="codicon-symbol-constant"] {
-        color: var(--color-attribute) !important;
-        background: var(--background-attribute);
-      }
+        &[class*="codicon-symbol-class"] {
+          color: var(--color-class) !important;
+          background: var(--background-class);
+        }
 
-      &[class*="codicon-symbol-function"] {
-        color: var(--color-function) !important;
-        background: var(--background-function);
-      }
+        &[class*="codicon-symbol-constant"] {
+          color: var(--color-attribute) !important;
+          background: var(--background-attribute);
+        }
 
-      &[class*="codicon-symbol-import"] {
-        color: var(--color-builtin) !important;
-        background: var(--background-builtin);
-      }
+        &[class*="codicon-symbol-function"] {
+          color: var(--color-function) !important;
+          background: var(--background-function);
+        }
 
-      &[class*="codicon-symbol-keyword"] {
-        color: var(--color-builtin) !important;
-        background: var(--background-builtin);
-      }
+        &[class*="codicon-symbol-import"] {
+          color: var(--color-builtin) !important;
+          background: var(--background-builtin);
+        }
 
-      &[class*="codicon-symbol-method"] {
-        color: var(--color-function) !important;
-        background: var(--background-function);
-      }
+        &[class*="codicon-symbol-keyword"] {
+          color: var(--color-builtin) !important;
+          background: var(--background-builtin);
+        }
 
-      &[class*="codicon-symbol-module"] {
-        color: var(--color-builtin) !important;
-        background: var(--background-builtin);
-      }
+        &[class*="codicon-symbol-method"] {
+          color: var(--color-function) !important;
+          background: var(--background-function);
+        }
 
-      &[class*="codicon-symbol-mixin"] {
-        color: var(--color-class) !important;
-        background: var(--background-class);
-      }
+        &[class*="codicon-symbol-module"] {
+          color: var(--color-builtin) !important;
+          background: var(--background-builtin);
+        }
 
-      &[class*="codicon-symbol-package"] {
-        color: var(--color-builtin) !important;
-        background: var(--background-builtin);
-      }
+        &[class*="codicon-symbol-mixin"] {
+          color: var(--color-class) !important;
+          background: var(--background-class);
+        }
 
-      &[class*="codicon-symbol-property"] {
-        color: var(--color-property) !important;
-        background: var(--background-property);
-      }
+        &[class*="codicon-symbol-package"] {
+          color: var(--color-builtin) !important;
+          background: var(--background-builtin);
+        }
 
-      &[class*="codicon-symbol-require"] {
-        color: var(--color-builtin) !important;
-        background: var(--background-builtin);
-      }
+        &[class*="codicon-symbol-property"] {
+          color: var(--color-property) !important;
+          background: var(--background-property);
+        }
 
-      &[class*="codicon-symbol-snippet"] {
-        color: var(--color-snippet) !important;
-        background: var(--background-snippet);
-      }
+        &[class*="codicon-symbol-require"] {
+          color: var(--color-builtin) !important;
+          background: var(--background-builtin);
+        }
 
-      &[class*="codicon-symbol-tag"] {
-        color: var(--color-tag) !important;
-        background: var(--background-tag);
-      }
+        &[class*="codicon-symbol-snippet"] {
+          color: var(--color-snippet) !important;
+          background: var(--background-snippet);
+        }
 
-      &[class*="codicon-symbol-type"] {
-        color: var(--color-class) !important;
-        background: var(--background-class);
-      }
+        &[class*="codicon-symbol-tag"] {
+          color: var(--color-tag) !important;
+          background: var(--background-tag);
+        }
 
-      &[class*="codicon-symbol-value"] {
-        color: var(--color-property) !important;
-        background: var(--background-property);
-      }
+        &[class*="codicon-symbol-type"] {
+          color: var(--color-class) !important;
+          background: var(--background-class);
+        }
 
-      &[class*="codicon-symbol-variable"] {
-        color: var(--color-tag) !important;
-        background: var(--background-tag);
-      }
+        &[class*="codicon-symbol-value"] {
+          color: var(--color-property) !important;
+          background: var(--background-property);
+        }
 
-      &[class*="codicon-symbol-selector"] {
-        color: var(--color-attribute) !important;
-        background: var(--background-attribute);
-      }
+        &[class*="codicon-symbol-variable"] {
+          color: var(--color-tag) !important;
+          background: var(--background-tag);
+        }
 
-      &[class*="codicon-symbol-boolean"] {
-        color: var(--color-boolean) !important;
-        background: var(--background-boolean);
-      }
+        &[class*="codicon-symbol-selector"] {
+          color: var(--color-attribute) !important;
+          background: var(--background-attribute);
+        }
 
-      &[class*="codicon-symbol-enum"] {
-        color: var(--color-enum) !important;
-        background: var(--background-enum);
-      }
+        &[class*="codicon-symbol-boolean"] {
+          color: var(--color-boolean) !important;
+          background: var(--background-boolean);
+        }
 
-      &[class*="codicon-symbol-event"] {
-        color: var(--color-event) !important;
-        background: var(--background-event);
-      }
+        &[class*="codicon-symbol-enum"] {
+          color: var(--color-enum) !important;
+          background: var(--background-enum);
+        }
 
-      &[class*="codicon-symbol-field"] {
-        color: var(--color-field) !important;
-        background: var(--background-field);
-      }
+        &[class*="codicon-symbol-event"] {
+          color: var(--color-event) !important;
+          background: var(--background-event);
+        }
 
-      &[class*="codicon-symbol-interface"] {
-        color: var(--color-interface) !important;
-        background: var(--background-interface);
-      }
+        &[class*="codicon-symbol-field"] {
+          color: var(--color-field) !important;
+          background: var(--background-field);
+        }
 
-      &[class*="codicon-symbol-key"] {
-        color: var(--color-key) !important;
-        background: var(--background-key);
-      }
+        &[class*="codicon-symbol-interface"] {
+          color: var(--color-interface) !important;
+          background: var(--background-interface);
+        }
 
-      &[class*="codicon-symbol-namespace"] {
-        color: var(--color-namespace) !important;
-        background: var(--background-namespace);
-      }
+        &[class*="codicon-symbol-key"] {
+          color: var(--color-key) !important;
+          background: var(--background-key);
+        }
 
-      &[class*="codicon-symbol-null"] {
-        color: var(--color-null) !important;
-        background: var(--background-null);
-      }
+        &[class*="codicon-symbol-namespace"] {
+          color: var(--color-namespace) !important;
+          background: var(--background-namespace);
+        }
 
-      &[class*="codicon-symbol-number"] {
-        color: var(--color-number) !important;
-        background: var(--background-number);
-      }
-      &[class*="codicon-symbol-object"] {
-        color: var(--color-object) !important;
-        background: var(--background-object);
-      }
+        &[class*="codicon-symbol-null"] {
+          color: var(--color-null) !important;
+          background: var(--background-null);
+        }
 
-      &[class*="codicon-symbol-operator"] {
-        color: var(--color-operator) !important;
-        background: var(--background-operator);
-      }
+        &[class*="codicon-symbol-number"] {
+          color: var(--color-number) !important;
+          background: var(--background-number);
+        }
+        &[class*="codicon-symbol-object"] {
+          color: var(--color-object) !important;
+          background: var(--background-object);
+        }
 
-      &[class*="codicon-symbol-reference"] {
-        color: var(--color-reference) !important;
-        background: var(--background-reference);
-      }
+        &[class*="codicon-symbol-operator"] {
+          color: var(--color-operator) !important;
+          background: var(--background-operator);
+        }
 
-      &[class*="codicon-symbol-string"] {
-        color: var(--color-string) !important;
-        background: var(--background-string);
-      }
+        &[class*="codicon-symbol-reference"] {
+          color: var(--color-reference) !important;
+          background: var(--background-reference);
+        }
 
-      &[class*="codicon-symbol-struct"] {
-        color: var(--color-struct) !important;
-        background: var(--background-struct);
-      }
+        &[class*="codicon-symbol-string"] {
+          color: var(--color-string) !important;
+          background: var(--background-string);
+        }
 
-      &[class*="codicon-symbol-text"] {
-        color: var(--color-text) !important;
-        background: var(--background-text);
-      }
+        &[class*="codicon-symbol-struct"] {
+          color: var(--color-struct) !important;
+          background: var(--background-struct);
+        }
 
-      &[class*="codicon-symbol-type-parameter"] {
-        color: var(--color-type-parameter) !important;
-        background: var(--background-type-parameter);
-      }
+        &[class*="codicon-symbol-text"] {
+          color: var(--color-text) !important;
+          background: var(--background-text);
+        }
 
-      &[class*="codicon-symbol-unit"] {
-        color: var(--color-unit) !important;
-        background: var(--background-unit);
+        &[class*="codicon-symbol-type-parameter"] {
+          color: var(--color-type-parameter) !important;
+          background: var(--background-type-parameter);
+        }
+
+        &[class*="codicon-symbol-unit"] {
+          color: var(--color-unit) !important;
+          background: var(--background-unit);
+        }
       }
     }
   }
