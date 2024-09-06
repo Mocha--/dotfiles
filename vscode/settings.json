@@ -1,0 +1,323 @@
+// Place your settings in this file to overwrite the default settings
+{
+    /*
+     * Window
+     */
+    "window.newWindowDimensions": "fullscreen",
+    "window.titleBarStyle": "native",
+    "window.customTitleBarVisibility": "never",
+
+    /*
+     * Explorer
+     */
+    "explorer.openEditors.visible": 1,
+    "explorer.confirmDelete": false,
+    "explorer.compactFolders": false,
+
+    /*
+     * Workbench
+     */
+    "workbench.editor.enablePreview": false,
+    "workbench.startupEditor": "none",
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.tree.indent": 16,
+    "workbench.activityBar.iconClickBehavior": "focus",
+    "workbench.productIconTheme": "fluent-icons",
+    "workbench.colorTheme": "Gruvbox Dark Medium",
+    "workbench.tips.enabled": false,
+    "workbench.iconTheme": "bearded-icons",
+    "workbench.activityBar.location": "hidden",
+    "workbench.colorCustomizations": {
+        "tab.activeBackground": "#2f3e46",
+        "editorSuggestWidget.border": "#7f4a5a",
+        "editorSuggestWidget.selectedBackground": "#7f4a5a40",
+        "editorSuggestWidget.focusHighlightForeground": "#cc8040",
+        "editorSuggestWidget.highlightForeground": "#cc8040",
+        "editorSuggestWidget.foreground": "#6b857f",
+        "editorSuggestWidget.selectedForeground": "#6b857f",
+        "editorBracketHighlight.foreground1": "#e76f51",
+        "editorBracketHighlight.foreground2": "#e5989b",
+        "editorBracketHighlight.foreground3": "#ef476f",
+        "editorBracketHighlight.foreground4": "#e07a5f",
+        "editorBracketHighlight.foreground5": "#db6904",
+        "editorBracketHighlight.foreground6": "#ffc8dd",
+        "editorError.foreground": "#FB4934",
+        "editor.selectionHighlightBorder": "#FF5252",
+        "editor.wordHighlightBorder": "#FF5252",
+    },
+
+    /*
+     * Editor
+     */
+    "editor.fontSize": 16,
+    "editor.lineHeight": 28,
+    "editor.letterSpacing": 0.5,
+    "editor.fontWeight": "normal",
+    "editor.fontFamily": "'Fira Code', 'Roboto Mono', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
+    "editor.wordWrap": "on",
+    "editor.colorDecorators": false,
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.snippetSuggestions": "bottom",
+    "editor.suggestFontSize": 16,
+    "editor.suggestLineHeight": 32,
+    "editor.renderWhitespace": "boundary",
+    "editor.cursorBlinking": "phase",
+    "editor.parameterHints.enabled": false,
+    "editor.suggest.showInlineDetails": false,
+    "editor.scrollbar.verticalScrollbarSize": 0,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.guides.indentation": true,
+    "editor.accessibilitySupport": "off",
+    "editor.autoClosingDelete": "always",
+    "editor.linkedEditing": true,
+    "editor.minimap.showSlider": "always",
+    "editor.minimap.scale": 2,
+    "editor.minimap.size": "proportional",
+    "editor.fontLigatures": true,
+    "editor.tabSize": 2,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.matchBrackets": "never",
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    },
+    "editor.inlayHints.enabled": "onUnlessPressed",
+    "editor.inlayHints.fontSize": 14,
+    "editor.inlayHints.padding": true,
+
+    /*
+     * Typescript
+     */
+    "typescript.suggest.autoImports": false,
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "typescript.preferences.jsxAttributeCompletionStyle": "none",
+    "typescript.inlayHints.parameterNames.enabled": "none",
+    "typescript.inlayHints.variableTypes.suppressWhenTypeMatchesName": true,
+    "typescript.inlayHints.variableTypes.enabled": true,
+    "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+    "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+    "typescript.inlayHints.parameterTypes.enabled": true,
+    "typescript.inlayHints.enumMemberValues.enabled": true,
+
+    /**
+     * Errorlens
+     */
+    "errorLens.messageBackgroundMode": "message",
+    "errorLens.padding": "2px 4px",
+    "errorLens.borderRadius": "4px",
+    "errorLens.margin": "48px",
+
+    /*
+     * Vim
+     */
+    "vim.leader": "\\",
+    "vim.easymotion": true,
+    "vim.easymotionMarkerBackgroundColor": "#2f3e46",
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,
+    "vim.mouseSelectionGoesIntoVisualMode": false,
+    "vim.searchHighlightColor": "#00695C",
+    "vim.insertModeKeyBindingsNonRecursive": [{
+        "before": ["j", "k"],
+        "after": ["<Esc>"]
+    }],
+    "vim.normalModeKeyBindingsNonRecursive": [{
+        "before": ["L"],
+        "after": [],
+        "commands": [{
+            "command": "workbench.action.nextEditor"
+        }]
+    }, {
+        "before": ["H"],
+        "after": [],
+        "commands": [{
+            "command": "workbench.action.previousEditor"
+        }]
+    }, {
+        "before": ["C-w"],
+        "after": [],
+        "commands": [{
+            "command": "workbench.action.closeActiveEditor"
+        }]
+    }, {
+        "before": ["<space>"],
+        "after": ["<leader>", "<leader>", "2", "s"]
+    }],
+    "vim.normalModeKeyBindings": [{
+        "before": ["J"],
+        "after": ["1", "0", "j"]
+    }, {
+        "before": ["K"],
+        "after": ["1", "0", "k"]
+    }, {
+        "before": ["W"],
+        "after": ["3", "w"]
+    }, {
+        "before": ["B"],
+        "after": ["3", "b"]
+    }, {
+        "before": ["z", "a"],
+        "after": ["z", "c"]
+    }, {
+        "before": ["M"],
+        "after": ["$", "s"]
+    }, {
+        "before": ["g", "r"],
+        "commands": ["references-view.findReferences"]
+    }],
+    "vim.visualModeKeyBindings": [{
+        "before": ["J"],
+        "after": ["1", "0", "j"]
+    }, {
+        "before": ["K"],
+        "after": ["1", "0", "k"]
+    }, {
+        "before": ["W"],
+        "after": ["3", "w"]
+    }, {
+        "before": ["B"],
+        "after": ["3", "b"]
+    }],
+
+    /**
+     * Git
+     */
+    "git.confirmSync": false,
+    "git.mergeEditor": false,
+    "git.autorefresh": true,
+
+    /**
+     * Files
+     */
+    "files.autoSave": "off",
+    "files.trimFinalNewlines": true,
+    "files.associations": {
+        "*.css": "css",
+        "*.json": "jsonc"
+    },
+
+    /**
+     * others
+     */
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "todohighlight.defaultStyle": {
+        "color": "#FB4934",
+        "backgroundColor": "transparent"
+    },
+    "todohighlight.keywords": [
+        "NOTE:",
+        "BUG:",
+        "IDEA:",
+        "REVIEW:",
+        {
+            "text": "TODO:",
+            "color": "#FB4934",
+            "backgroundColor": "transparent"
+        }, {
+            "text": "FIXME:",
+            "color": "#FB4934",
+            "backgroundColor": "transparent",
+        }
+    ],
+    "subtleBrackets.style": {
+        "borderWidth": "2px",
+        "borderStyle": "solid none",
+        "borderColor": "#00695C",
+    },
+
+    "breadcrumbs.enabled": false,
+    "breadcrumbs.filePath": "last",
+    "notebook.breadcrumbs.showCodeCells": false,
+    "extensions.ignoreRecommendations": true,
+    "terminal.integrated.env.osx": {
+        "FIG_NEW_SESSION": "1",
+        "CW_NEW_SESSION": "1",
+        "Q_NEW_SESSION": "1"
+    },
+    "zenMode.centerLayout": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "clock.dateFormat": "HH:MM",
+    "color-highlight.matchWords": false,
+    "emmet.excludeLanguages": [
+        "markdown",
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact"
+    ],
+    "todo-tree.highlights.enabled": false,
+    "update.mode": "manual",
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "[json]": {
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace"
+    },
+    "yaml.schemas": {
+        "file:///Users/xibo.wang/.vscode/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "redhat.telemetry.enabled": true,
+
+    /**
+     * apc customize ui
+     */
+    "apc.imports": [
+        "file:///Users/xibo.wang/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.1/dist/updateHandler.js",
+        "/Users/xibo.wang/projects/dotfiles/vscode/apc-extension/variables.css",
+        "/Users/xibo.wang/projects/dotfiles/vscode/apc-extension/global.css",
+        "/Users/xibo.wang/projects/dotfiles/vscode/apc-extension/suggest-widget.css",
+        "/Users/xibo.wang/projects/dotfiles/vscode/apc-extension/quick-input-widget.css",
+        "/Users/xibo.wang/projects/dotfiles/vscode/apc-extension/quick-input-widget-backdrop.css",
+        "/Users/xibo.wang/projects/dotfiles/vscode/apc-extension/github-copilot-chat-window.css",
+        "/Users/xibo.wang/projects/dotfiles/vscode/apc-extension/typescript-error.css",
+        "/Users/xibo.wang/projects/dotfiles/vscode/apc-extension/side-bar.css",
+        "/Users/xibo.wang/projects/dotfiles/vscode/apc-extension/tab-bar.css",
+        "/Users/xibo.wang/projects/dotfiles/vscode/apc-extension/welcome-page.css",
+        "/Users/xibo.wang/projects/dotfiles/vscode/apc-extension/status-bar.css",
+        "/Users/xibo.wang/projects/dotfiles/vscode/apc-extension/miscellaneous.css",
+    ],
+    "apc.font.family": "Fira Code",
+    "apc.activityBar": {
+        "position": "bottom",
+        "size": 80
+    },
+    "apc.sidebar.titlebar": {
+        "height": 40,
+        "fontSize": 12
+    },
+    "apc.listRow": {
+        "lists": [
+            "customview-tree",
+            "results",
+            "open-editors",
+            "explorer-folders-view",
+            "outline-tree",
+            "scm-view",
+            "debug-view-content",
+            "debug-breakpoints",
+            "tree",
+            "quick-input-list"
+        ],
+        "height": 32,
+        "fontSize": 14
+    },
+    "apc.menubar.compact": false,
+    "apc.statusBar": {
+        "position": "bottom",
+        "height": 28,
+        "fontSize": 14
+    },
+    "apc.header": {
+        "height": 40,
+        "fontSize": 14
+    }
+}
