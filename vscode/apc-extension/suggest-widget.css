@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 4px 4px 2px; /* visually equal spacing because of bottom dragging bar */
+    padding: 8px 8px 7px; /* visually equal spacing because of bottom dragging bar */
     border-width: 2px;
     border-radius: 4px;
     overflow: hidden;
