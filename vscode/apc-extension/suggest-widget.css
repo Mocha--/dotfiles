@@ -28,9 +28,12 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
+        margin-inline-end: 6px;
 
         > .colorspan {
-          margin: 0;
+          width: 14px !important;
+          height: 14px !important;
+          margin: 0 !important;
         }
       }
 
