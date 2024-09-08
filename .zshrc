@@ -138,27 +138,48 @@ alias gl='git lg'
 alias glog='git lg'
 alias co=code
 alias python=python3
+alias p='pnpm'
+alias dc='docker compose'
+alias ghcs='gh copilot suggest'
+alias ghce='gh copilot explain'
 
-# exa
-alias ls='exa --icons'
+# lsd
+alias ls='lsd'
 
-# vudoo db alias
-alias vudoo_current_commerce='sh ~/projects/vudoo-sql-scripts/current-commerce-105893.sh'
-alias vudoo_switch_shopify='sh ~/projects/vudoo-sql-scripts/create-shopify-105881.sh'
-alias vudoo_switch_salesforce_braintree='sh ~/projects/vudoo-sql-scripts/create-salesforce-braintree-105893.sh'
-alias vudoo_switch_salesforce_adyen='sh ~/projects/vudoo-sql-scripts/create-salesforce-adyen-105893.sh'
-alias vudoo_switch_bigcommerce_stripe='sh ~/projects/vudoo-sql-scripts/create-bigcommerce-stripe-105893.sh'
-alias vudoo_switch_bigcommerce_adyen='sh ~/projects/vudoo-sql-scripts/create-bigcommerce-adyen-105893.sh'
-alias vudoo_switch_magento_stripe='sh ~/projects/vudoo-sql-scripts/create-magento-stripe-105893.sh'
-alias vudoo_switch_magento_braintree='sh ~/projects/vudoo-sql-scripts/create-magento-braintree-105893.sh'
-alias vudoo_switch_magento_adyen='sh ~/projects/vudoo-sql-scripts/create-magento-adyen-105893.sh'
-alias vudoo_switch_magento_cybersource='sh ~/projects/vudoo-sql-scripts/create-magento-cybersource-105893.sh'
-alias vudoo_switch_magento_cybersource_onsite='sh ~/projects/vudoo-sql-scripts/create-magento-cybersource-onsite-105893.sh'
-alias vudoo_switch_amazon_product_advertising='sh ~/projects/vudoo-sql-scripts/create-amazon-product-advertising-105893.sh'
-alias vudoo_switch_amazon_anywhere='sh ~/projects/vudoo-sql-scripts/create-amazon-anywhere-105893.sh'
-alias vudoo_clear_commerce_integration='sh ~/projects/vudoo-sql-scripts/delete-105893-integrations.sh'
-alias vudoo_clear_redis='sh ~/projects/vudoo-sql-scripts/clear-redis.sh'
-alias vudoo_rm_node_modules='rm -rf frontend-packages/brightcove-plugin/node_modules frontend-packages/content-cart-embed/node_modules frontend-packages/gate-validator/node_modules frontend-packages/mxo-frame/node_modules frontend-packages/shopify-integration-app/node_modules frontend-packages/shoppable/node_modules frontend-packages/shoppable/playground/node_modules frontend-packages/shoppable-sdk/node_modules frontend-packages/v-tracker/node_modules public_html/react/node_modules public_html/react/ContentCart/node_modules node_modules'
+# vudoo alias
+alias vudoo_clear_redis='sh ~/projects/vudoo-sql-scripts/utils/clear-redis.sh'
+
+# dashboard 105893
+alias vudoo_use_shopify_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-shopify.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
+alias vudoo_use_salesforce_braintree_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-salesforce-braintree.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
+alias vudoo_use_salesforce_adyen_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-salesforce-adyen.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
+alias vudoo_use_bigcommerce_stripe_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-bigcommerce-stripe.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
+alias vudoo_use_bigcommerce_adyen_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-bigcommerce-adyen.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
+alias vudoo_use_magento_stripe_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-magento-stripe.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
+alias vudoo_use_magento_braintree_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-magento-braintree.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
+alias vudoo_use_magento_adyen_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-magento-adyen.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
+alias vudoo_use_magento_cybersource_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-magento-cybersource.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
+alias vudoo_use_amazon_product_advertising_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-amazon-product-advertising.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
+alias vudoo_use_amazon_anywhere_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-amazon-anywhere.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
+alias vudoo_use_hcl_braintree_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-hcl-braintree.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
+alias vudoo_use_sap_adyen_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-sap-adyen.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
+alias vudoo_clear_commerce_integration_105893='dashboardId=105893 sh ~/projects/vudoo-sql-scripts/utils/clear-commerce-integration.sh'
+
+# dashboard 108026
+alias vudoo_use_shopify_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-shopify.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
+alias vudoo_use_salesforce_braintree_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-salesforce-braintree.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
+alias vudoo_use_salesforce_adyen_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-salesforce-adyen.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
+alias vudoo_use_bigcommerce_stripe_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-bigcommerce-stripe.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
+alias vudoo_use_bigcommerce_adyen_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-bigcommerce-adyen.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
+alias vudoo_use_magento_stripe_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-magento-stripe.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
+alias vudoo_use_magento_braintree_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-magento-braintree.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
+alias vudoo_use_magento_adyen_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-magento-adyen.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
+alias vudoo_use_magento_cybersource_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-magento-cybersource.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
+alias vudoo_use_amazon_product_advertising_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-amazon-product-advertising.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
+alias vudoo_use_amazon_anywhere_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-amazon-anywhere.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
+alias vudoo_use_hcl_braintree_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-hcl-braintree.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
+alias vudoo_use_sap_adyen_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-sap-adyen.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
+alias vudoo_clear_commerce_integration_108026='dashboardId=108026 sh ~/projects/vudoo-sql-scripts/utils/clear-commerce-integration.sh'
 
 # bun completions
 [ -s "/Users/xibo.wang/.bun/_bun" ] && source "/Users/xibo.wang/.bun/_bun"
@@ -169,6 +190,9 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # yarn
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# vudoo Variables
+export AWS_DEFAULT_REGION=ap-southeast-2
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
