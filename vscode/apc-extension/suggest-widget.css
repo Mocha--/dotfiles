@@ -28,6 +28,9 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
+        height: 100% !important;
+        aspect-ratio: 1 / 1;
+        width: auto !important;
         margin-inline-end: 6px;
 
         > .colorspan {
