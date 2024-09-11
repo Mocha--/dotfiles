@@ -49,6 +49,18 @@
 
       .monaco-list-rows {
         background: transparent !important;
+
+        .monaco-list-row {
+          .monaco-icon-label::before {
+            width: 20px !important;
+            height: 20px !important;
+            background-size: 20px !important;
+          }
+
+          .quick-input-list-entry-action-bar {
+            margin-top: 9px !important;
+          }
+        }
       }
 
       .scrollbar {
