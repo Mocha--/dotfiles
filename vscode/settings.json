@@ -6,20 +6,18 @@
     "window.newWindowDimensions": "fullscreen",
     "window.titleBarStyle": "native",
     "window.customTitleBarVisibility": "never",
-
     /*
      * Explorer
      */
     "explorer.openEditors.visible": 1,
     "explorer.confirmDelete": false,
     "explorer.compactFolders": false,
-
     /*
      * Workbench
      */
     "workbench.editor.enablePreview": false,
     "workbench.startupEditor": "none",
-    "workbench.tree.renderIndentGuides": "always",
+    "workbench.tree.renderIndentGuides": "none",
     "workbench.tree.indent": 16,
     "workbench.activityBar.iconClickBehavior": "focus",
     "workbench.productIconTheme": "fluent-icons",
@@ -30,11 +28,11 @@
     "workbench.colorCustomizations": {
         "tab.activeBackground": "#2f3e46",
         "editorSuggestWidget.border": "#7f4a5a",
-        "editorSuggestWidget.selectedBackground": "#7f4a5a40",
-        "editorSuggestWidget.focusHighlightForeground": "#cc8040",
-        "editorSuggestWidget.highlightForeground": "#cc8040",
-        "editorSuggestWidget.foreground": "#6b857f",
-        "editorSuggestWidget.selectedForeground": "#6b857f",
+        "editorSuggestWidget.selectedBackground": "#c56c8640",
+        "editorSuggestWidget.focusHighlightForeground": "#c56c86",
+        "editorSuggestWidget.highlightForeground": "#c56c86",
+        "editorSuggestWidget.foreground": "#6c938a",
+        "editorSuggestWidget.selectedForeground": "#6c938a",
         "editorBracketHighlight.foreground1": "#e76f51",
         "editorBracketHighlight.foreground2": "#e5989b",
         "editorBracketHighlight.foreground3": "#ef476f",
@@ -42,10 +40,9 @@
         "editorBracketHighlight.foreground5": "#db6904",
         "editorBracketHighlight.foreground6": "#ffc8dd",
         "editorError.foreground": "#FB4934",
-        "editor.selectionHighlightBorder": "#FF5252",
-        "editor.wordHighlightBorder": "#FF5252",
+        "editor.selectionHighlightBorder": "#FB4934",
+        "editor.wordHighlightBorder": "#FB4934",
     },
-
     /*
      * Editor
      */
@@ -67,7 +64,7 @@
     "editor.scrollbar.verticalScrollbarSize": 0,
     "editor.scrollbar.vertical": "hidden",
     "editor.hideCursorInOverviewRuler": true,
-    "editor.guides.indentation": true,
+    "editor.guides.indentation": false,
     "editor.accessibilitySupport": "off",
     "editor.autoClosingDelete": "always",
     "editor.linkedEditing": true,
@@ -77,7 +74,7 @@
     "editor.fontLigatures": true,
     "editor.tabSize": 2,
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-    "editor.matchBrackets": "never",
+    "editor.matchBrackets": false,
     "editor.quickSuggestions": {
         "other": true,
         "comments": false,
@@ -86,7 +83,6 @@
     "editor.inlayHints.enabled": "onUnlessPressed",
     "editor.inlayHints.fontSize": 14,
     "editor.inlayHints.padding": true,
-
     /*
      * Typescript
      */
@@ -100,7 +96,6 @@
     "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
     "typescript.inlayHints.parameterTypes.enabled": true,
     "typescript.inlayHints.enumMemberValues.enabled": true,
-
     /**
      * Errorlens
      */
@@ -108,86 +103,188 @@
     "errorLens.padding": "2px 4px",
     "errorLens.borderRadius": "4px",
     "errorLens.margin": "48px",
-
     /*
      * Vim
      */
     "vim.leader": "\\",
     "vim.easymotion": true,
-    "vim.easymotionMarkerBackgroundColor": "#2f3e46",
+    "vim.easymotionMarkerBackgroundColor": "#7f4a5a",
+    "vim.easymotionMarkerForegroundColorOneChar": "#6c938a",
     "vim.useSystemClipboard": true,
     "vim.hlsearch": true,
     "vim.mouseSelectionGoesIntoVisualMode": false,
-    "vim.searchHighlightColor": "#00695C",
-    "vim.insertModeKeyBindingsNonRecursive": [{
-        "before": ["j", "k"],
-        "after": ["<Esc>"]
-    }],
-    "vim.normalModeKeyBindingsNonRecursive": [{
-        "before": ["L"],
-        "after": [],
-        "commands": [{
-            "command": "workbench.action.nextEditor"
-        }]
-    }, {
-        "before": ["H"],
-        "after": [],
-        "commands": [{
-            "command": "workbench.action.previousEditor"
-        }]
-    }, {
-        "before": ["C-w"],
-        "after": [],
-        "commands": [{
-            "command": "workbench.action.closeActiveEditor"
-        }]
-    }, {
-        "before": ["<space>"],
-        "after": ["<leader>", "<leader>", "2", "s"]
-    }],
-    "vim.normalModeKeyBindings": [{
-        "before": ["J"],
-        "after": ["1", "0", "j"]
-    }, {
-        "before": ["K"],
-        "after": ["1", "0", "k"]
-    }, {
-        "before": ["W"],
-        "after": ["3", "w"]
-    }, {
-        "before": ["B"],
-        "after": ["3", "b"]
-    }, {
-        "before": ["z", "a"],
-        "after": ["z", "c"]
-    }, {
-        "before": ["M"],
-        "after": ["$", "s"]
-    }, {
-        "before": ["g", "r"],
-        "commands": ["references-view.findReferences"]
-    }],
-    "vim.visualModeKeyBindings": [{
-        "before": ["J"],
-        "after": ["1", "0", "j"]
-    }, {
-        "before": ["K"],
-        "after": ["1", "0", "k"]
-    }, {
-        "before": ["W"],
-        "after": ["3", "w"]
-    }, {
-        "before": ["B"],
-        "after": ["3", "b"]
-    }],
-
+    "vim.searchHighlightColor": "#7f4a5a",
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "L"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.nextEditor"
+                }
+            ]
+        },
+        {
+            "before": [
+                "H"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.previousEditor"
+                }
+            ]
+        },
+        {
+            "before": [
+                "C-w"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.closeActiveEditor"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<space>"
+            ],
+            "after": [
+                "<leader>",
+                "<leader>",
+                "2",
+                "s"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "J"
+            ],
+            "after": [
+                "1",
+                "0",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "after": [
+                "1",
+                "0",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "W"
+            ],
+            "after": [
+                "3",
+                "w"
+            ]
+        },
+        {
+            "before": [
+                "B"
+            ],
+            "after": [
+                "3",
+                "b"
+            ]
+        },
+        {
+            "before": [
+                "z",
+                "a"
+            ],
+            "after": [
+                "z",
+                "c"
+            ]
+        },
+        {
+            "before": [
+                "M"
+            ],
+            "after": [
+                "$",
+                "s"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "r"
+            ],
+            "commands": [
+                "references-view.findReferences"
+            ]
+        },
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "J"
+            ],
+            "after": [
+                "1",
+                "0",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "after": [
+                "1",
+                "0",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "W"
+            ],
+            "after": [
+                "3",
+                "w"
+            ]
+        },
+        {
+            "before": [
+                "B"
+            ],
+            "after": [
+                "3",
+                "b"
+            ]
+        }
+    ],
     /**
      * Git
      */
     "git.confirmSync": false,
     "git.mergeEditor": false,
     "git.autorefresh": true,
-
     /**
      * Files
      */
@@ -197,7 +294,6 @@
         "*.css": "css",
         "*.json": "jsonc"
     },
-
     /**
      * others
      */
@@ -215,7 +311,8 @@
             "text": "TODO:",
             "color": "#FB4934",
             "backgroundColor": "transparent"
-        }, {
+        },
+        {
             "text": "FIXME:",
             "color": "#FB4934",
             "backgroundColor": "transparent",
@@ -224,9 +321,8 @@
     "subtleBrackets.style": {
         "borderWidth": "2px",
         "borderStyle": "solid none",
-        "borderColor": "#00695C",
+        "borderColor": "#c56c86",
     },
-
     "breadcrumbs.enabled": false,
     "breadcrumbs.filePath": "last",
     "notebook.breadcrumbs.showCodeCells": false,
@@ -266,7 +362,6 @@
         "file:///Users/xibo.wang/.vscode/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     },
     "redhat.telemetry.enabled": true,
-
     /**
      * apc customize ui
      */
@@ -304,11 +399,17 @@
             "scm-view",
             "debug-view-content",
             "debug-breakpoints",
-            "tree",
-            "quick-input-list"
+            "quick-input-list",
         ],
-        "height": 32,
-        "fontSize": 14
+        "height": 40,
+        "fontSize": 14,
+        "parts": {
+            // suggest-widget
+            "tree": {
+                "height": 32,
+                "fontSize": 14
+            },
+        }
     },
     "apc.menubar.compact": false,
     "apc.statusBar": {
@@ -319,5 +420,5 @@
     "apc.header": {
         "height": 40,
         "fontSize": 14
-    }
+    },
 }

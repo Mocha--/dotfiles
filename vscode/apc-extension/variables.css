@@ -1,9 +1,9 @@
 :root {
   --vim-normal-color: hsla(160, 20%, 35%, 1);
-  --vim-insert-color: hsla(330, 30%, 35%, 1);
-  --vim-visual-color: hsla(25, 90%, 45%, 1);
-  --vim-command-color: hsla(300, 15%, 35%, 1);
-  --vim-search-color: hsla(10, 50%, 45%, 1);
+  --vim-insert-color: hsla(338, 23%, 37%, 1); /* #7f4a5a */
+  --vim-visual-color: hsla(25, 90%, 45%, 1);  /* #da620b */
+  --vim-command-color: hsla(300, 15%, 35%, 1); /* #674c67 */
+  --vim-search-color: hsla(10, 50%, 45%, 1); /* #ac4d39 */
   --quick-input-widget-bg: hsla(270, 20%, 35%, 1);
   --quick-input-widget-textfield-bg: hsla(300, 15%, 35%, 1);
   --vim-mode-order: 1;
@@ -14,6 +14,13 @@
   --github-copilot-order: 8;
   --clock-order: 6;
   --battery-order: 7;
+
+  --color-no-use-candidate1: #725a7a;
+  --color-no-use-candidate2: #c56c86;
+  --color-no-use-candidate2: #6c938a;
+
+  --color-status-bar-segment-1: #354f52;
+  --color-status-bar-segment-2: #2f3e46;
 
   --color-attribute: hsla(280, 60%, 80%, 1); /* Lavender */
   --background-attribute: hsla(280, 60%, 80%, 0.2);

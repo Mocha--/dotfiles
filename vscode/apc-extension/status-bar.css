@@ -155,7 +155,7 @@
   inline-size: 180px;
   padding-left: calc(var(--status-bar-height) / 2);
   margin-right: 0;
-  --bg-color: #354f52;
+  --bg-color: var(--color-status-bar-segment-1);
 
   > a {
     justify-content: center;
@@ -190,7 +190,7 @@
   left: calc(var(--status-bar-height) / 2 * 3);
   padding-left: calc(var(--status-bar-height) / 2);
   margin-right: 0;
-  --bg-color: #2f3e46;
+  --bg-color: var(--color-status-bar-segment-2);
 
   > a {
     box-sizing: border-box;
@@ -231,7 +231,7 @@
   left: calc(var(--status-bar-height) / 2 * 2);
   padding-left: calc(var(--status-bar-height) / 2);
   margin-right: 0;
-  --bg-color: #354f52;
+  --bg-color: var(--color-status-bar-segment-1);
 
   > a {
     box-sizing: border-box;
@@ -266,7 +266,7 @@
   left: calc(var(--status-bar-height) / 2);
   padding-left: calc(var(--status-bar-height) / 2);
   margin-right: 0;
-  --bg-color: #2f3e46;
+  --bg-color: var(--color-status-bar-segment-2);
 
   > a {
     box-sizing: border-box;
@@ -301,7 +301,7 @@
   position: relative;
   padding-left: calc(var(--status-bar-height) / 2);
   margin-right: 0;
-  --bg-color: #354f52;
+  --bg-color: var(--color-status-bar-segment-1);
 
   > a {
     box-sizing: border-box;
