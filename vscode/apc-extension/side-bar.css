@@ -19,4 +19,15 @@
       margin-top: 0 !important;
     }
   }
+
+  /* Styles for the cursor element */
+  > div:first-child > div:first-child > div:first-child > div:first-child > div {
+    box-sizing: border-box;
+    gap: 1rem;
+    padding: 0 1.5rem;
+
+    & > .sidebar2-item-icon-anysphere {
+      border-bottom: none !important;
+    }
+  }
 }
