@@ -74,8 +74,8 @@ wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_wid
 	end
 
 	local edge_foreground = background
-	local tab_idx = tab.tab_index
-	local title = tab_idx .. ":" .. tab_title(tab)
+	local tab_idx_from_1 = tab.tab_index + 1
+	local title = tab_idx_from_1 .. ":" .. tab_title(tab)
 
 	-- ensure that the titles fit in the available space,
 	-- and that we have room for the edges.
