@@ -205,7 +205,7 @@
   # Red prompt symbol if the last command failed.
   typeset -g POWERLEVEL9K_PROMPT_CHAR_ERROR_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND=196
   # Default prompt symbol.
-  typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_VIINS_CONTENT_EXPANSION='❯❯❯'
+  typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_VIINS_CONTENT_EXPANSION=''
   # Prompt symbol in command vi mode.
   typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_VICMD_CONTENT_EXPANSION='❮'
   # Prompt symbol in visual vi mode.
@@ -222,9 +222,9 @@
 
   ##################################[ dir: current directory ]##################################
   # Current directory background color.
-  typeset -g POWERLEVEL9K_DIR_BACKGROUND=012
+  typeset -g POWERLEVEL9K_DIR_BACKGROUND=024
   # Default current directory foreground color.
-  typeset -g POWERLEVEL9K_DIR_FOREGROUND=254
+  typeset -g POWERLEVEL9K_DIR_FOREGROUND=255
   # If directory is too long, shorten some of its segments to the shortest possible unique
   # prefix. The shortened directory can be tab-completed to the original.
   typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_unique
@@ -361,11 +361,11 @@
 
   #####################################[ vcs: git status ]######################################
   # Version control background colors.
-  typeset -g POWERLEVEL9K_VCS_CLEAN_BACKGROUND=003
-  typeset -g POWERLEVEL9K_VCS_MODIFIED_BACKGROUND=003
-  typeset -g POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND=003
-  typeset -g POWERLEVEL9K_VCS_CONFLICTED_BACKGROUND=003
-  typeset -g POWERLEVEL9K_VCS_LOADING_BACKGROUND=003
+  typeset -g POWERLEVEL9K_VCS_CLEAN_BACKGROUND=208
+  typeset -g POWERLEVEL9K_VCS_MODIFIED_BACKGROUND=208
+  typeset -g POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND=208
+  typeset -g POWERLEVEL9K_VCS_CONFLICTED_BACKGROUND=208
+  typeset -g POWERLEVEL9K_VCS_LOADING_BACKGROUND=208
 
   # Branch icon. Set this parameter to '\UE0A0 ' for the popular Powerline branch icon.
   typeset -g POWERLEVEL9K_VCS_BRANCH_ICON='\uF126 '
@@ -756,14 +756,14 @@
   typeset -g POWERLEVEL9K_RANGER_BACKGROUND=0
   # Custom icon.
   # typeset -g POWERLEVEL9K_RANGER_VISUAL_IDENTIFIER_EXPANSION='⭐'
-  
+
   ####################[ yazi: yazi shell (https://github.com/sxyazi/yazi) ]#####################
   # Yazi shell color.
   typeset -g POWERLEVEL9K_YAZI_FOREGROUND=3
   typeset -g POWERLEVEL9K_YAZI_BACKGROUND=0
   # Custom icon.
   # typeset -g POWERLEVEL9K_YAZI_VISUAL_IDENTIFIER_EXPANSION='⭐'
-  
+
   ######################[ nnn: nnn shell (https://github.com/jarun/nnn) ]#######################
   # Nnn shell color.
   typeset -g POWERLEVEL9K_NNN_FOREGROUND=0
@@ -978,8 +978,8 @@
   typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_FOREGROUND=3
   typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_BACKGROUND=0
   # Default context color (no privileges, no SSH).
-  typeset -g POWERLEVEL9K_CONTEXT_FOREGROUND=007
-  typeset -g POWERLEVEL9K_CONTEXT_BACKGROUND=96
+  typeset -g POWERLEVEL9K_CONTEXT_FOREGROUND=255
+  typeset -g POWERLEVEL9K_CONTEXT_BACKGROUND=009
 
   # Context format when running with privileges: user@hostname.
   typeset -g POWERLEVEL9K_CONTEXT_ROOT_TEMPLATE='%n'
@@ -1758,7 +1758,7 @@
   ####################################[ time: current time ]####################################
   # Current time color.
   typeset -g POWERLEVEL9K_TIME_FOREGROUND=0
-  typeset -g POWERLEVEL9K_TIME_BACKGROUND=7
+  typeset -g POWERLEVEL9K_TIME_BACKGROUND=012
   # Format for the current time: 09:51:02. See `man 3 strftime`.
   typeset -g POWERLEVEL9K_TIME_FORMAT='%D{%H:%M:%S}'
   # If set to true, time will update when you hit enter. This way prompts for the past
