@@ -14,7 +14,7 @@ local TAB_HOVER_BG_COLOR = "#808080"
 local TAB_HOVER_FG_COLOR = "#cccccc"
 local ACTIVE_TAB_BG_COLOR = "#7f4a5a"
 local ACTIVE_TAB_FG_COLOR = "#ffffff"
-local CURSOR_COLOR = '#dddddd'
+local CURSOR_COLOR = "#dddddd"
 
 -- General
 config.front_end = "WebGpu"
@@ -34,14 +34,14 @@ config.colors = {
 		-- (does not apply when fancy tab bar is in use)
 		background = TAB_BAR_BG_COLOR,
 	},
- -- Overrides the cell background color when the current cell is occupied by the
-  -- cursor and the cursor style is set to Block
-  cursor_bg = CURSOR_COLOR,
-  -- Overrides the text color when the current cell is occupied by the cursor
-  -- Specifies the border color of the cursor when the cursor style is set to Block,
-  -- or the color of the vertical or horizontal bar when the cursor style is set to
-  -- Bar or Underline.
-  cursor_border = CURSOR_COLOR,
+	-- Overrides the cell background color when the current cell is occupied by the
+	-- cursor and the cursor style is set to Block
+	cursor_bg = CURSOR_COLOR,
+	-- Overrides the text color when the current cell is occupied by the cursor
+	-- Specifies the border color of the cursor when the cursor style is set to Block,
+	-- or the color of the vertical or horizontal bar when the cursor style is set to
+	-- Bar or Underline.
+	cursor_border = CURSOR_COLOR,
 }
 
 -- Font
@@ -131,7 +131,7 @@ config.tab_bar_style = {
 
 -- Window
 config.window_decorations = "RESIZE"
-config.window_background_opacity = 0.8
+config.window_background_opacity = 0.9
 config.macos_window_background_blur = 8
 config.window_padding = {
 	bottom = 8,
