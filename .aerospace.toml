@@ -9,9 +9,7 @@ after-login-command = []
 # You can use it to add commands that run after AeroSpace startup.
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
-after-startup-command = [
-  'exec-and-forget sketchybar'
-]
+after-startup-command = ['exec-and-forget sketchybar']
 
 # Start AeroSpace at login
 start-at-login = true
@@ -39,7 +37,9 @@ default-root-container-orientation = 'auto'
 # See https://nikitabobko.github.io/AeroSpace/commands#move-mouse
 # Fallback value (if you omit the key): on-focused-monitor-changed = []
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
-on-focus-changed = ['move-mouse window-lazy-center'] # Mouse lazily follows any focus (window or workspace)
+on-focus-changed = [
+  'move-mouse window-lazy-center',
+] # Mouse lazily follows any focus (window or workspace)
 
 # You can effectively turn off macOS "Hide application" (cmd-h) feature by toggling this flag
 # Useful if you don't use this macOS feature, but accidentally hit cmd-h or cmd-alt-h key
@@ -47,8 +47,10 @@ on-focus-changed = ['move-mouse window-lazy-center'] # Mouse lazily follows any 
 automatically-unhide-macos-hidden-apps = false
 
 # Notify Sketchybar about workspace change
-exec-on-workspace-change = ['/bin/bash', '-c',
-  'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE'
+exec-on-workspace-change = [
+  '/bin/bash',
+  '-c',
+  'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE',
 ]
 
 # Possible values: (qwerty|dvorak)
@@ -65,11 +67,11 @@ preset = 'qwerty'
 #                 See: https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
 inner.horizontal = 16
-inner.vertical =   16
-outer.left =       16
-outer.bottom =     16
-outer.top = [{monitor.'built-in' = 16}, 56]
-outer.right =      16
+inner.vertical = 16
+outer.left = 16
+outer.bottom = 16
+outer.top = [{ monitor.'built-in' = 16 }, 56]
+outer.right = 16
 
 [workspace-to-monitor-force-assignment]
 4 = [1, 'secondary', 'built-in']
@@ -100,9 +102,9 @@ run = ['move-node-to-workspace 1']
 if.app-id = 'com.apple.finder'
 run = ['move-node-to-workspace 1']
 
-# on Iterm2 open
+# on Wezterm open
 [[on-window-detected]]
-if.app-id = 'com.googlecode.iterm2'
+if.app-id = 'com.github.wez.wezterm'
 run = ['move-node-to-workspace 2']
 
 # on Cursor open
@@ -169,7 +171,7 @@ run = ['move-node-to-workspace 5']
 alt-comma = 'layout h_tiles'
 alt-period = 'layout v_tiles'
 alt-slash = 'layout v_accordion'
-alt-shift-f='layout floating tiling'
+alt-shift-f = 'layout floating tiling'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#focus
 ctrl-h = 'focus left --boundaries-action wrap-around-the-workspace'
@@ -214,7 +216,10 @@ alt-shift-semicolon = 'mode service'
 [mode.service.binding]
 esc = ['reload-config', 'mode main']
 r = ['flatten-workspace-tree', 'mode main'] # reset layout
-f = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
+f = [
+  'layout floating tiling',
+  'mode main',
+] # Toggle between floating and tiling layout
 
 backspace = ['close-all-windows-but-current', 'mode main']
 # sticky is not yet supported https://github.com/nikitabobko/AeroSpace/issues/2
