@@ -143,6 +143,7 @@ alias p='pnpm'
 alias dc='docker compose'
 alias ghcs='gh copilot suggest'
 alias ghce='gh copilot explain'
+alias sktrl='sketchybar --reload'
 
 # lsd
 alias ls='lsd'
