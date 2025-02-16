@@ -1,5 +1,6 @@
-# Q pre block. Keep at the top of this file.
+# Amazon Q pre block. Keep at the top of this file.
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh"
+# Q pre block. Keep at the top of this file.
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -136,7 +137,7 @@ alias e=exit
 alias g=google
 alias gl='git lg'
 alias glog='git lg'
-alias co=code
+alias co=cursor
 alias python=python3
 alias p='pnpm'
 alias dc='docker compose'
@@ -163,6 +164,11 @@ alias vudoo_use_amazon_product_advertising_105893='sqlFilePath=/Users/xibo.wang/
 alias vudoo_use_amazon_anywhere_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-amazon-anywhere.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
 alias vudoo_use_hcl_braintree_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-hcl-braintree.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
 alias vudoo_use_sap_adyen_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-sap-adyen.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
+alias vudoo_use_commercetools_adyen_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-commercetools-adyen.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
+alias vudoo_use_commercetools_braintree_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-commercetools-braintree.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
+alias vudoo_use_commercetools_stripe_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-commercetools-stripe.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
+alias vudoo_use_commercetools_paydock_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-commercetools-paydock.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
+alias vudoo_use_commercetools_kmart_paydock_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-commercetools-kmart-paydock.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
 alias vudoo_clear_commerce_integration_105893='dashboardId=105893 sh ~/projects/vudoo-sql-scripts/utils/clear-commerce-integration.sh'
 
 # dashboard 108026
@@ -179,6 +185,11 @@ alias vudoo_use_amazon_product_advertising_108026='sqlFilePath=/Users/xibo.wang/
 alias vudoo_use_amazon_anywhere_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-amazon-anywhere.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
 alias vudoo_use_hcl_braintree_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-hcl-braintree.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
 alias vudoo_use_sap_adyen_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-sap-adyen.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
+alias vudoo_use_commercetools_adyen_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-commercetools-adyen.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
+alias vudoo_use_commercetools_braintree_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-commercetools-braintree.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
+alias vudoo_use_commercetools_stripe_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-commercetools-stripe.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
+alias vudoo_use_commercetools_paydock_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-commercetools-paydock.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
+alias vudoo_use_commercetools_kmart_paydock_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-commercetools-kmart-paydock.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
 alias vudoo_clear_commerce_integration_108026='dashboardId=108026 sh ~/projects/vudoo-sql-scripts/utils/clear-commerce-integration.sh'
 
 # bun completions
@@ -198,4 +209,7 @@ export AWS_DEFAULT_REGION=ap-southeast-2
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Q post block. Keep at the bottom of this file.
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# Amazon Q post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
