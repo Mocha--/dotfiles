@@ -171,6 +171,7 @@ alias vudoo_use_commercetools_braintree_105893='sqlFilePath=/Users/xibo.wang/pro
 alias vudoo_use_commercetools_stripe_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-commercetools-stripe.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
 alias vudoo_use_commercetools_paydock_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-commercetools-paydock.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
 alias vudoo_use_commercetools_kmart_paydock_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-commercetools-kmart-paydock.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
+alias vudoo_use_intelligent_reach_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-intelligent-reach.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
 alias vudoo_clear_commerce_integration_105893='dashboardId=105893 sh ~/projects/vudoo-sql-scripts/utils/clear-commerce-integration.sh'
 
 # dashboard 108026
@@ -192,6 +193,7 @@ alias vudoo_use_commercetools_braintree_108026='sqlFilePath=/Users/xibo.wang/pro
 alias vudoo_use_commercetools_stripe_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-commercetools-stripe.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
 alias vudoo_use_commercetools_paydock_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-commercetools-paydock.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
 alias vudoo_use_commercetools_kmart_paydock_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-commercetools-kmart-paydock.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
+alias vudoo_use_intelligent_reach_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-intelligent-reach.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
 alias vudoo_clear_commerce_integration_108026='dashboardId=108026 sh ~/projects/vudoo-sql-scripts/utils/clear-commerce-integration.sh'
 
 # bun completions
