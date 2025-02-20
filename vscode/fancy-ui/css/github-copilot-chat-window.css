@@ -30,7 +30,7 @@
 
         .monaco-list-rows {
           .interactive-request {
-            background: var(--vim-insert-color);
+            background: var(--color-vim-insert);
             border: 0;
           }
         }

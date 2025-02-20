@@ -32,7 +32,7 @@
   position: relative;
   padding-right: calc(var(--status-bar-height) / 2);
   background: transparent !important;
-  --bg-color: var(--vim-normal-color);
+  --bg-color: var(--color-vim-normal);
 
   > a {
     box-sizing: border-box;
@@ -55,21 +55,21 @@
   }
 
   &[aria-label="-- INSERT --"] {
-    --bg-color: var(--vim-insert-color);
+    --bg-color: var(--color-vim-insert);
   }
 
   &[aria-label="-- VISUAL --"],
   &[aria-label="-- VISUAL LINE --"] {
-    --bg-color: var(--vim-visual-color);
+    --bg-color: var(--color-vim-visual);
   }
 
   &[aria-label^=":"] {
-    --bg-color: var(--vim-command-color);
+    --bg-color: var(--color-vim-command);
   }
 
   &[aria-label^="/"],
   &[aria-label^="-- EASYMOTION"] {
-    --bg-color: var(--vim-search-color);
+    --bg-color: var(--color-vim-search);
   }
 }
 
@@ -99,7 +99,7 @@
   left: calc(var(--status-item-base-inline-offset) * (calc(var(--right-items-count) - calc(var(--order) - var(--left-items-count)))));
   padding-inline: calc(var(--status-bar-height) / 2);
   margin-right: 0;
-  --bg-color: var(--vim-normal-color);
+  --bg-color: var(--color-vim-normal);
 
   > a {
     box-sizing: border-box;
@@ -144,7 +144,7 @@
     #vscodevim\.vim\.primary[aria-label="-- VISUAL --"],
     #vscodevim\.vim\.primary[aria-label="-- VISUAL LINE --"]
   ) & {
-    --bg-color: var(--vim-visual-color);
+    --bg-color: var(--color-vim-visual);
   }
 
   #workbench\.parts\.statusbar:has(#vscodevim\.vim\.primary[aria-label^=":"]) & {
@@ -152,7 +152,7 @@
   }
 
   #workbench\.parts\.statusbar:has(#vscodevim\.vim\.primary[aria-label^="/"], #vscodevim\.vim\.primary[aria-label^="-- EASYMOTION"]) & {
-    --bg-color: var(--vim-search-color);
+    --bg-color: var(--color-vim-search);
   }
 }
 
