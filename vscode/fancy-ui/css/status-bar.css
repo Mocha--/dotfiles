@@ -9,6 +9,7 @@
   position: relative;
   outline: none;
   font-size: 14px;
+  color: #dddddd !important;
 
   &::after {
     display: none;
@@ -169,7 +170,7 @@
   inline-size: 180px;
   padding-inline: calc(var(--status-bar-height) / 2);
   margin-right: 0;
-  --bg-color: var(--color-status-bar-segment-1);
+  --bg-color: var(--color-status-bar-item);
 
   > a {
     justify-content: center;
@@ -214,7 +215,7 @@
   left: calc(var(--status-item-base-inline-offset) * (calc(var(--right-items-count) - calc(var(--order) - var(--left-items-count)))));
   padding-inline: calc(var(--status-bar-height) / 2);
   margin-right: 0;
-  --bg-color: var(--color-status-bar-segment-2);
+  --bg-color: var(--color-status-bar-item);
 
   > a {
     box-sizing: border-box;
@@ -265,7 +266,7 @@
   left: calc(var(--status-item-base-inline-offset) * (calc(var(--right-items-count) - calc(var(--order) - var(--left-items-count)))));
   padding-left: calc(var(--status-bar-height) / 2);
   margin-right: 0;
-  --bg-color: var(--color-status-bar-segment-1);
+  --bg-color: var(--color-status-bar-item);
 
   > a {
     box-sizing: border-box;
@@ -299,7 +300,7 @@
   position: relative;
   padding-left: calc(var(--status-bar-height) / 2);
   margin-right: 0;
-  --bg-color: var(--color-status-bar-segment-1);
+  --bg-color: var(--color-status-bar-item);
 
   > a {
     box-sizing: border-box;

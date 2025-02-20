@@ -1,11 +1,24 @@
 :root {
-  --vim-normal-color: hsla(160, 20%, 35%, 1);
-  --vim-insert-color: hsla(338, 23%, 37%, 1); /* #7f4a5a */
-  --vim-visual-color: hsla(25, 90%, 45%, 1);  /* #da620b */
-  --vim-command-color: hsla(300, 15%, 35%, 1); /* #674c67 */
-  --vim-search-color: hsla(10, 50%, 45%, 1); /* #ac4d39 */
-  --quick-input-widget-bg: hsla(270, 20%, 35%, 1);
-  --quick-input-widget-textfield-bg: hsla(300, 15%, 35%, 1);
+  --color-1: hsla(160, 20%, 35%, 1); /* #4d635a */
+  --color-2: hsla(338, 23%, 37%, 1); /* #7f4a5a */
+  --color-3: hsla(25, 90%, 45%, 1);  /* #da620b */
+  --color-4: hsla(300, 15%, 35%, 1); /* #674c67 */
+  --color-5: hsla(10, 50%, 45%, 1); /* #ac4d39 */
+  --color-6: hsla(270, 20%, 35%, 1); /* #5c4d5c */
+  --color-7: #725a7a;
+  --color-8: #274c77;
+  --color-9: #6c938a;
+  --color-10: #354f52;
+  --color-11: #2f3e46;
+
+  --vim-normal-color: var(--color-2);
+  --vim-insert-color: var(--color-8);
+  --vim-visual-color: var(--color-3);
+  --vim-command-color: var(--color-4);
+  --vim-search-color: var(--color-5);
+  --quick-input-widget-bg: var(--color-6);
+  --quick-input-widget-textfield-bg: var(--color-4);
+  --color-status-bar-item: var(--color-2);
 
   /* left items */
   --left-items-count: 2;
@@ -19,13 +32,6 @@
   --problems-order: 5;
   --clock-order: 6;
   /* --github-copilot-order: 7;  */ /* NOTE: not in used */
-
-  --color-no-use-candidate1: #725a7a;
-  --color-no-use-candidate2: #c56c86;
-  --color-no-use-candidate2: #6c938a;
-
-  --color-status-bar-segment-1: #354f52;
-  --color-status-bar-segment-2: #2f3e46;
 
   --color-attribute: hsla(280, 60%, 80%, 1); /* Lavender */
   --background-attribute: hsla(280, 60%, 80%, 0.2);
