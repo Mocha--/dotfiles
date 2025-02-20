@@ -61,7 +61,7 @@
         padding: 0 16px;
         border: 0;
         border-radius: 8px;
-        background: var(--quick-input-widget-textfield-bg);
+        background: var(--color-quick-input-widget-textfield-bg);
 
         .monaco-toolbar {
           margin: 0 !important;

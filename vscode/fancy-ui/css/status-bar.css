@@ -137,7 +137,7 @@
   }
 
   #workbench\.parts\.statusbar:has(#vscodevim\.vim\.primary[aria-label="-- INSERT --"]) & {
-    --bg-color: var(--vim-insert-color);
+    --bg-color: var(--color-vim-insert);
   }
 
   #workbench\.parts\.statusbar:has(
@@ -148,7 +148,7 @@
   }
 
   #workbench\.parts\.statusbar:has(#vscodevim\.vim\.primary[aria-label^=":"]) & {
-    --bg-color: var(--vim-command-color);
+    --bg-color: var(--color-vim-command);
   }
 
   #workbench\.parts\.statusbar:has(#vscodevim\.vim\.primary[aria-label^="/"], #vscodevim\.vim\.primary[aria-label^="-- EASYMOTION"]) & {
