@@ -4,13 +4,14 @@
   inset: 0 !important;
   display: flex;
   flex-direction: column;
-  width: min(80%, var(--quick-input-widget-width)) !important;
+  width: min(60%, var(--quick-input-widget-width)) !important;
   block-size: var(--quick-input-widget-height) !important;
   padding: 16px;
   border: 0 !important;
   border-radius: 16px !important;
   margin: auto !important;
   box-shadow: none !important;
+  font-size: 14px !important;
   background: var(--quick-input-widget-bg) !important;
 
   &:has(.quick-input-html-widget > .interactive-session) {
@@ -51,14 +52,35 @@
         background: transparent !important;
 
         .monaco-list-row {
-          .monaco-icon-label::before {
-            width: 20px !important;
-            height: 20px !important;
-            background-size: 20px !important;
-          }
+          padding: 0 8px !important;
 
-          .quick-input-list-entry-action-bar {
-            margin-top: 9px !important;
+          .quick-input-list-entry {
+            display: flex;
+            align-items: center;
+            block-size: 100% !important;
+            padding: 0 !important;
+
+            .quick-input-list-entry-action-bar {
+              margin: 0 !important;
+            }
+
+            .quick-input-list-separator {
+              margin-inline-end: 16px;
+            }
+
+            .quick-input-list-rows {
+              margin: 0 !important;
+
+              & > .quick-input-list-row:first-child {
+                flex: 1 1 0%;
+
+                .monaco-icon-label::before {
+                  width: 20px !important;
+                  height: 20px !important;
+                  background-size: 20px !important;
+                }
+              }
+            }
           }
         }
       }

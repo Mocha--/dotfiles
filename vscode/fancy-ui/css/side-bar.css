@@ -1,0 +1,40 @@
+.sidebar {
+  border: 0 !important;
+  font-size: 14px !important;
+
+  .title {
+    font-size: 12px !important;
+  }
+
+  .monaco-list-row {
+    .monaco-icon-label {
+      display: flex;
+      align-items: center;
+      height: 100% !important;
+
+      &::before {
+        width: 20px !important;
+        background-size: 20px !important;
+      }
+
+      &::after {
+        margin-top: 0 !important;
+      }
+    }
+
+    .linematch {
+      line-height: 40px !important; /* same as line item height */
+    }
+  }
+
+  /* Styles for the cursor element */
+  > div:first-child > div:first-child > div:first-child > div:first-child > div {
+    box-sizing: border-box;
+    gap: 1rem;
+    padding: 0 1.5rem;
+
+    & > .sidebar2-item-icon-anysphere {
+      border-bottom: none !important;
+    }
+  }
+}

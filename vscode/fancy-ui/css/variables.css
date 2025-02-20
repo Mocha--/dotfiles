@@ -6,14 +6,19 @@
   --vim-search-color: hsla(10, 50%, 45%, 1); /* #ac4d39 */
   --quick-input-widget-bg: hsla(270, 20%, 35%, 1);
   --quick-input-widget-textfield-bg: hsla(300, 15%, 35%, 1);
+
+  /* left items */
+  --left-items-count: 2;
   --vim-mode-order: 1;
   --vim-command-order: 2;
+
+  /* right items */
+  --right-items-count: 4;
   --source-control-order: 3;
   --editor-selection-order: 4;
   --problems-order: 5;
-  --github-copilot-order: 8;
   --clock-order: 6;
-  --battery-order: 7;
+  /* --github-copilot-order: 7;  */ /* NOTE: not in used */
 
   --color-no-use-candidate1: #725a7a;
   --color-no-use-candidate2: #c56c86;

@@ -1,424 +1,369 @@
-// Place your settings in this file to overwrite the default settings
 {
-    /*
-     * Window
-     */
-    "window.newWindowDimensions": "fullscreen",
-    "window.titleBarStyle": "native",
-    "window.customTitleBarVisibility": "never",
-    /*
-     * Explorer
-     */
-    "explorer.openEditors.visible": 1,
-    "explorer.confirmDelete": false,
-    "explorer.compactFolders": false,
-    /*
-     * Workbench
-     */
-    "workbench.editor.enablePreview": false,
-    "workbench.startupEditor": "none",
-    "workbench.tree.renderIndentGuides": "none",
-    "workbench.tree.indent": 16,
-    "workbench.activityBar.iconClickBehavior": "focus",
-    "workbench.productIconTheme": "fluent-icons",
-    "workbench.colorTheme": "Gruvbox Dark Medium",
-    "workbench.tips.enabled": false,
-    "workbench.iconTheme": "bearded-icons",
-    "workbench.activityBar.location": "hidden",
-    "workbench.colorCustomizations": {
-        "tab.activeBackground": "#2f3e46",
-        "editorSuggestWidget.border": "#7f4a5a",
-        "editorSuggestWidget.selectedBackground": "#7f4a5a40",
-        "editorSuggestWidget.focusHighlightForeground": "#da620b",
-        "editorSuggestWidget.highlightForeground": "#da620b",
-        "editorSuggestWidget.foreground": "#6c938a",
-        "editorSuggestWidget.selectedForeground": "#6c938a",
-        "editorBracketHighlight.foreground1": "#e76f51",
-        "editorBracketHighlight.foreground2": "#e5989b",
-        "editorBracketHighlight.foreground3": "#da620b",
-        "editorBracketHighlight.foreground4": "#e07a5f",
-        "editorBracketHighlight.foreground5": "#ef476f",
-        "editorBracketHighlight.foreground6": "#ffc8dd",
-        "editorError.foreground": "#FB4934",
-        "editor.selectionHighlightBorder": "#FB4934",
-        "editor.wordHighlightBorder": "#FB4934",
-    },
-    /*
-     * Editor
-     */
-    "editor.fontSize": 16,
-    "editor.lineHeight": 28,
-    "editor.letterSpacing": 0.5,
-    "editor.fontWeight": "normal",
-    "editor.fontFamily": "'Fira Code', 'Roboto Mono', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
-    "editor.wordWrap": "on",
-    "editor.colorDecorators": false,
-    "editor.acceptSuggestionOnEnter": "off",
-    "editor.snippetSuggestions": "bottom",
-    "editor.suggestFontSize": 16,
-    "editor.suggestLineHeight": 32,
-    "editor.renderWhitespace": "boundary",
-    "editor.cursorBlinking": "phase",
-    "editor.parameterHints.enabled": false,
-    "editor.suggest.showInlineDetails": false,
-    "editor.scrollbar.verticalScrollbarSize": 0,
-    "editor.scrollbar.vertical": "hidden",
-    "editor.hideCursorInOverviewRuler": true,
-    "editor.guides.indentation": false,
-    "editor.accessibilitySupport": "off",
-    "editor.autoClosingDelete": "always",
-    "editor.linkedEditing": true,
-    "editor.minimap.showSlider": "always",
-    "editor.minimap.scale": 2,
-    "editor.minimap.size": "proportional",
-    "editor.fontLigatures": true,
-    "editor.tabSize": 2,
-    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-    "editor.matchBrackets": "never",
+  "[json]": {
     "editor.quickSuggestions": {
-        "other": true,
-        "comments": false,
-        "strings": true
+      "strings": true
     },
-    "editor.inlayHints.enabled": "onUnlessPressed",
-    "editor.inlayHints.fontSize": 14,
-    "editor.inlayHints.padding": true,
-    /*
-     * Typescript
-     */
-    "typescript.suggest.autoImports": false,
-    "typescript.updateImportsOnFileMove.enabled": "never",
-    "typescript.preferences.jsxAttributeCompletionStyle": "none",
-    "typescript.inlayHints.parameterNames.enabled": "none",
-    "typescript.inlayHints.variableTypes.suppressWhenTypeMatchesName": true,
-    "typescript.inlayHints.variableTypes.enabled": true,
-    "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
-    "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
-    "typescript.inlayHints.parameterTypes.enabled": true,
-    "typescript.inlayHints.enumMemberValues.enabled": true,
-    /**
-     * Errorlens
-     */
-    "errorLens.messageBackgroundMode": "message",
-    "errorLens.padding": "2px 4px",
-    "errorLens.borderRadius": "4px",
-    "errorLens.margin": "48px",
-    /*
-     * Vim
-     */
-    "vim.leader": "\\",
-    "vim.easymotion": true,
-    "vim.easymotionMarkerBackgroundColor": "#7f4a5a",
-    "vim.easymotionMarkerForegroundColorOneChar": "#6c938a",
-    "vim.useSystemClipboard": true,
-    "vim.hlsearch": true,
-    "vim.mouseSelectionGoesIntoVisualMode": false,
-    "vim.searchHighlightColor": "#7f4a5a",
-    "vim.insertModeKeyBindingsNonRecursive": [
+    "editor.suggest.insertMode": "replace"
+  },
+  "friendly-ui.disableWorkbenchJs": true,
+  "friendly-ui.customJsPath": "~/projects/dotfiles/vscode/fancy-ui/js/overwrite-workbench.js",
+  "custom-ui-style.reloadWithoutPrompting": true,
+  "custom-ui-style.external.imports": [
+    "file:///Users/xibo.wang/projects/dotfiles/vscode/fancy-ui/css/variables.css",
+    "file:///Users/xibo.wang/projects/dotfiles/vscode/fancy-ui/css/global.css",
+    "file:///Users/xibo.wang/projects/dotfiles/vscode/fancy-ui/css/suggest-widget.css",
+    "file:///Users/xibo.wang/projects/dotfiles/vscode/fancy-ui/css/quick-input-widget.css",
+    "file:///Users/xibo.wang/projects/dotfiles/vscode/fancy-ui/css/quick-input-widget-backdrop.css",
+    // "file:///Users/xibo.wang/projects/dotfiles/vscode/fancy-ui/css/github-copilot-chat-window.css", // NOTE: not used in cursor
+    "file:///Users/xibo.wang/projects/dotfiles/vscode/fancy-ui/css/typescript-error.css",
+    "file:///Users/xibo.wang/projects/dotfiles/vscode/fancy-ui/css/side-bar.css",
+    "file:///Users/xibo.wang/projects/dotfiles/vscode/fancy-ui/css/tab-bar.css",
+    // "file:///Users/xibo.wang/projects/dotfiles/vscode/fancy-ui/css/welcome-page.css", // NOTE: not used in cursor
+    "file:///Users/xibo.wang/projects/dotfiles/vscode/fancy-ui/css/status-bar.css",
+    "file:///Users/xibo.wang/projects/dotfiles/vscode/fancy-ui/css/miscellaneous.css",
+    "file:///Users/xibo.wang/projects/dotfiles/vscode/fancy-ui/css/minimap.css",
+  ],
+  "custom-ui-style.electron": {
+    "frame": false,
+    "opacity": 0.96, // Range: 0-1 (To go fully transparent, set it to 0)
+  },
+  "breadcrumbs.enabled": false,
+  "breadcrumbs.filePath": "last",
+  "clock.dateFormat": "HH:MM",
+  "color-highlight.matchWords": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.accessibilitySupport": "off",
+  "editor.autoClosingDelete": "always",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.colorDecorators": false,
+  "editor.cursorBlinking": "phase",
+  "editor.fontFamily": "'Fira Code', 'Roboto Mono', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "editor.fontWeight": "normal",
+  "editor.guides.indentation": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.inlayHints.enabled": "onUnlessPressed",
+  "editor.inlayHints.fontSize": 14,
+  "editor.inlayHints.padding": true,
+  "editor.letterSpacing": 0.5,
+  "editor.lineHeight": 28,
+  "editor.linkedEditing": true,
+  "editor.matchBrackets": "never",
+  "editor.minimap.enabled": true,
+  "editor.minimap.scale": 2,
+  "editor.minimap.showSlider": "always",
+  "editor.minimap.size": "proportional",
+  "editor.parameterHints.enabled": false,
+  "editor.quickSuggestions": {
+    "comments": false,
+    "other": true,
+    "strings": true
+  },
+  "editor.renderWhitespace": "boundary",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.verticalScrollbarSize": 0,
+  "editor.snippetSuggestions": "bottom",
+  "editor.suggest.showInlineDetails": false,
+  "editor.suggestFontSize": 16,
+  "editor.suggestLineHeight": 32,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "emmet.excludeLanguages": [
+    "markdown",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "errorLens.borderRadius": "4px",
+  "errorLens.margin": "48px",
+  "errorLens.messageBackgroundMode": "message",
+  "errorLens.padding": "2px 4px",
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.openEditors.visible": 1,
+  "extensions.ignoreRecommendations": true,
+  "files.associations": {
+    "*.css": "css",
+    "*.json": "jsonc"
+  },
+  "files.autoSave": "off",
+  "files.trimFinalNewlines": true,
+  "github.copilot.enable": {
+    "*": true,
+    "markdown": false,
+    "plaintext": false,
+    "scminput": false
+  },
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "notebook.breadcrumbs.showCodeCells": false,
+  "redhat.telemetry.enabled": true,
+  "scm.showHistoryGraph": false,
+  "scm.showIncomingChanges": "never",
+  "scm.showOutgoingChanges": "never",
+  "security.workspace.trust.untrustedFiles": "open",
+  "subtleBrackets.style": {
+    "borderColor": "#c56c86",
+    "borderStyle": "solid none",
+    "borderWidth": "2px"
+  },
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1",
+    "CW_NEW_SESSION": "1",
+    "Q_NEW_SESSION": "1"
+  },
+  "todo-tree.highlights.enabled": false,
+  "todohighlight.defaultStyle": {
+    "backgroundColor": "transparent",
+    "color": "#FB4934"
+  },
+  "todohighlight.keywords": [
+    "NOTE:",
+    "BUG:",
+    "IDEA:",
+    "REVIEW:",
+    {
+      "backgroundColor": "transparent",
+      "color": "#FB4934",
+      "text": "TODO:"
+    },
+    {
+      "backgroundColor": "transparent",
+      "color": "#FB4934",
+      "text": "FIXME:"
+    }
+  ],
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.inlayHints.parameterNames.enabled": "none",
+  "typescript.inlayHints.parameterTypes.enabled": true,
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.inlayHints.variableTypes.enabled": true,
+  "typescript.inlayHints.variableTypes.suppressWhenTypeMatchesName": true,
+  "typescript.preferences.jsxAttributeCompletionStyle": "none",
+  "typescript.suggest.autoImports": false,
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "update.mode": "manual",
+  "vim.easymotion": true,
+  "vim.easymotionMarkerBackgroundColor": "#7f4a5a",
+  "vim.easymotionMarkerForegroundColorOneChar": "#6c938a",
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "after": [
+        "<Esc>"
+      ],
+      "before": [
+        "j",
+        "k"
+      ]
+    }
+  ],
+  "vim.leader": "\\",
+  "vim.mouseSelectionGoesIntoVisualMode": false,
+  "vim.normalModeKeyBindings": [
+    {
+      "after": [
+        "1",
+        "0",
+        "j"
+      ],
+      "before": [
+        "J"
+      ]
+    },
+    {
+      "after": [
+        "1",
+        "0",
+        "k"
+      ],
+      "before": [
+        "K"
+      ]
+    },
+    {
+      "after": [
+        "3",
+        "w"
+      ],
+      "before": [
+        "W"
+      ]
+    },
+    {
+      "after": [
+        "3",
+        "b"
+      ],
+      "before": [
+        "B"
+      ]
+    },
+    {
+      "after": [
+        "z",
+        "c"
+      ],
+      "before": [
+        "z",
+        "a"
+      ]
+    },
+    {
+      "after": [
+        "$",
+        "s"
+      ],
+      "before": [
+        "M"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "r"
+      ],
+      "commands": [
+        "references-view.findReferences"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "after": [],
+      "before": [
+        "L"
+      ],
+      "commands": [
         {
-            "before": [
-                "j",
-                "k"
-            ],
-            "after": [
-                "<Esc>"
-            ]
+          "command": "workbench.action.nextEditor"
         }
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
+      ]
+    },
+    {
+      "after": [],
+      "before": [
+        "H"
+      ],
+      "commands": [
         {
-            "before": [
-                "L"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.nextEditor"
-                }
-            ]
-        },
-        {
-            "before": [
-                "H"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.previousEditor"
-                }
-            ]
-        },
-        {
-            "before": [
-                "C-w"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.closeActiveEditor"
-                }
-            ]
-        },
-        {
-            "before": [
-                "<space>"
-            ],
-            "after": [
-                "<leader>",
-                "<leader>",
-                "2",
-                "s"
-            ]
+          "command": "workbench.action.previousEditor"
         }
-    ],
-    "vim.normalModeKeyBindings": [
+      ]
+    },
+    {
+      "after": [],
+      "before": [
+        "C-w"
+      ],
+      "commands": [
         {
-            "before": [
-                "J"
-            ],
-            "after": [
-                "1",
-                "0",
-                "j"
-            ]
-        },
-        {
-            "before": [
-                "K"
-            ],
-            "after": [
-                "1",
-                "0",
-                "k"
-            ]
-        },
-        {
-            "before": [
-                "W"
-            ],
-            "after": [
-                "3",
-                "w"
-            ]
-        },
-        {
-            "before": [
-                "B"
-            ],
-            "after": [
-                "3",
-                "b"
-            ]
-        },
-        {
-            "before": [
-                "z",
-                "a"
-            ],
-            "after": [
-                "z",
-                "c"
-            ]
-        },
-        {
-            "before": [
-                "M"
-            ],
-            "after": [
-                "$",
-                "s"
-            ]
-        },
-        {
-            "before": [
-                "g",
-                "r"
-            ],
-            "commands": [
-                "references-view.findReferences"
-            ]
-        },
-    ],
-    "vim.visualModeKeyBindings": [
-        {
-            "before": [
-                "J"
-            ],
-            "after": [
-                "1",
-                "0",
-                "j"
-            ]
-        },
-        {
-            "before": [
-                "K"
-            ],
-            "after": [
-                "1",
-                "0",
-                "k"
-            ]
-        },
-        {
-            "before": [
-                "W"
-            ],
-            "after": [
-                "3",
-                "w"
-            ]
-        },
-        {
-            "before": [
-                "B"
-            ],
-            "after": [
-                "3",
-                "b"
-            ]
+          "command": "workbench.action.closeActiveEditor"
         }
-    ],
-    /**
-     * Git
-     */
-    "git.confirmSync": false,
-    "git.mergeEditor": false,
-    "git.autorefresh": true,
-    /**
-     * Files
-     */
-    "files.autoSave": "off",
-    "files.trimFinalNewlines": true,
-    "files.associations": {
-        "*.css": "css",
-        "*.json": "jsonc"
+      ]
     },
-    /**
-     * others
-     */
-    "javascript.updateImportsOnFileMove.enabled": "never",
-    "todohighlight.defaultStyle": {
-        "color": "#FB4934",
-        "backgroundColor": "transparent"
+    {
+      "after": [
+        "<leader>",
+        "<leader>",
+        "2",
+        "s"
+      ],
+      "before": [
+        "<space>"
+      ]
+    }
+  ],
+  "vim.searchHighlightColor": "#7f4a5a",
+  "vim.useSystemClipboard": true,
+  "vim.visualModeKeyBindings": [
+    {
+      "after": [
+        "1",
+        "0",
+        "j"
+      ],
+      "before": [
+        "J"
+      ]
     },
-    "todohighlight.keywords": [
-        "NOTE:",
-        "BUG:",
-        "IDEA:",
-        "REVIEW:",
-        {
-            "text": "TODO:",
-            "color": "#FB4934",
-            "backgroundColor": "transparent"
-        },
-        {
-            "text": "FIXME:",
-            "color": "#FB4934",
-            "backgroundColor": "transparent",
-        }
-    ],
-    "subtleBrackets.style": {
-        "borderWidth": "2px",
-        "borderStyle": "solid none",
-        "borderColor": "#c56c86",
+    {
+      "after": [
+        "1",
+        "0",
+        "k"
+      ],
+      "before": [
+        "K"
+      ]
     },
-    "breadcrumbs.enabled": false,
-    "breadcrumbs.filePath": "last",
-    "notebook.breadcrumbs.showCodeCells": false,
-    "extensions.ignoreRecommendations": true,
-    "terminal.integrated.env.osx": {
-        "FIG_NEW_SESSION": "1",
-        "CW_NEW_SESSION": "1",
-        "Q_NEW_SESSION": "1"
+    {
+      "after": [
+        "3",
+        "w"
+      ],
+      "before": [
+        "W"
+      ]
     },
-    "zenMode.centerLayout": false,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "security.workspace.trust.untrustedFiles": "open",
-    "clock.dateFormat": "HH:MM",
-    "color-highlight.matchWords": false,
-    "emmet.excludeLanguages": [
-        "markdown",
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact"
-    ],
-    "todo-tree.highlights.enabled": false,
-    "update.mode": "manual",
-    "github.copilot.enable": {
-        "*": true,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false
-    },
-    "[json]": {
-        "editor.quickSuggestions": {
-            "strings": true
-        },
-        "editor.suggest.insertMode": "replace"
-    },
-    "yaml.schemas": {
-        "file:///Users/xibo.wang/.vscode/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-    },
-    "redhat.telemetry.enabled": true,
-    /**
-     * apc customize ui
-     */
-    "apc.imports": [
-        "file:///Users/xibo.wang/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.1/dist/updateHandler.js",
-        "/Users/xibo.wang/projects/dotfiles/vscode/apc-extension/variables.css",
-        "/Users/xibo.wang/projects/dotfiles/vscode/apc-extension/global.css",
-        "/Users/xibo.wang/projects/dotfiles/vscode/apc-extension/suggest-widget.css",
-        "/Users/xibo.wang/projects/dotfiles/vscode/apc-extension/quick-input-widget.css",
-        "/Users/xibo.wang/projects/dotfiles/vscode/apc-extension/quick-input-widget-backdrop.css",
-        "/Users/xibo.wang/projects/dotfiles/vscode/apc-extension/github-copilot-chat-window.css",
-        "/Users/xibo.wang/projects/dotfiles/vscode/apc-extension/typescript-error.css",
-        "/Users/xibo.wang/projects/dotfiles/vscode/apc-extension/side-bar.css",
-        "/Users/xibo.wang/projects/dotfiles/vscode/apc-extension/tab-bar.css",
-        "/Users/xibo.wang/projects/dotfiles/vscode/apc-extension/welcome-page.css",
-        "/Users/xibo.wang/projects/dotfiles/vscode/apc-extension/status-bar.css",
-        "/Users/xibo.wang/projects/dotfiles/vscode/apc-extension/miscellaneous.css",
-    ],
-    "apc.font.family": "Fira Code",
-    "apc.activityBar": {
-        "position": "bottom",
-        "size": 80
-    },
-    "apc.sidebar.titlebar": {
-        "height": 40,
-        "fontSize": 12
-    },
-    "apc.listRow": {
-        "lists": [
-            "customview-tree",
-            "results",
-            "open-editors",
-            "explorer-folders-view",
-            "outline-tree",
-            "scm-view",
-            "debug-view-content",
-            "debug-breakpoints",
-            "quick-input-list",
-        ],
-        "height": 40,
-        "fontSize": 14,
-        "parts": {
-            // suggest-widget
-            "tree": {
-                "height": 32,
-                "fontSize": 14
-            },
-        }
-    },
-    "apc.menubar.compact": false,
-    "apc.statusBar": {
-        "position": "bottom",
-        "height": 28,
-        "fontSize": 14
-    },
-    "apc.header": {
-        "height": 40,
-        "fontSize": 14
-    },
+    {
+      "after": [
+        "3",
+        "b"
+      ],
+      "before": [
+        "B"
+      ]
+    }
+  ],
+  "window.commandCenter": false,
+  "window.customTitleBarVisibility": "never",
+  "window.newWindowDimensions": "default",
+  "window.titleBarStyle": "native",
+  "workbench.activityBar.iconClickBehavior": "focus",
+  "workbench.activityBar.location": "top",
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#6c938a25",
+    "editor.selectionHighlightBorder": "#FB4934",
+    "editor.wordHighlightBorder": "#FB4934",
+    "editorBracketHighlight.foreground1": "#e76f51",
+    "editorBracketHighlight.foreground2": "#e5989b",
+    "editorBracketHighlight.foreground3": "#da620b",
+    "editorBracketHighlight.foreground4": "#e07a5f",
+    "editorBracketHighlight.foreground5": "#ef476f",
+    "editorBracketHighlight.foreground6": "#ffc8dd",
+    "editorError.foreground": "#FB4934",
+    "editorLineNumber.activeForeground": "#6c938a",
+    "editorLineNumber.foreground": "#6c938a30",
+    "editorSuggestWidget.border": "#7f4a5a",
+    "editorSuggestWidget.focusHighlightForeground": "#da620b",
+    "editorSuggestWidget.foreground": "#6c938a",
+    "editorSuggestWidget.highlightForeground": "#da620b",
+    "editorSuggestWidget.selectedBackground": "#7f4a5a40",
+    "editorSuggestWidget.selectedForeground": "#6c938a",
+    "tab.activeBackground": "#2f3e46",
+  },
+  "workbench.colorTheme": "Gruvbox Dark Medium",
+  "workbench.editor.enablePreview": false,
+  "workbench.iconTheme": "bearded-icons",
+  "workbench.layoutControl.enabled": false,
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
+  "workbench.tree.indent": 16,
+  "workbench.tree.renderIndentGuides": "none",
+  "yaml.schemas": {
+    "file:///Users/xibo.wang/.vscode/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+  "zenMode.centerLayout": false,
+  "errorLens.enabled": true,
+  "svg.preview.mode": "svg",
+  "aws.suppressPrompts": {
+    "ecsRunCommandEnable": true,
+    "ecsRunCommand": true
+  },
+  "terminal.integrated.shellIntegration.enabled": true,
 }

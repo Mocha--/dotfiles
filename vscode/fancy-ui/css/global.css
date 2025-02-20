@@ -6,3 +6,9 @@
     display: none;
   }
 }
+
+body {
+  .mac {
+    font-family: "Fira Code" !important;
+  }
+}

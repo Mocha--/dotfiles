@@ -14,6 +14,10 @@
       width: 24px;
       background-size: 24px;
     }
+
+    .label-name {
+      font-size: 14px !important;
+    }
   }
 
   .editor-actions {

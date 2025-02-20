@@ -1,6 +1,6 @@
 body > .monaco-workbench[role=application]:has(.quick-input-widget:not([style*='display: none;']))::before {
   content: '';
-  z-index: 100;
+  z-index: 1000;
   position: absolute;
   inset: 0;
   background: rgba(64, 64, 64, .25);

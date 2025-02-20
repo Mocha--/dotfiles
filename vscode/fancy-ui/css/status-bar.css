@@ -4,9 +4,11 @@
 ****************************************
 */
 #workbench\.parts\.statusbar {
-  --status-bar-height: 32px;
+  --status-bar-height: 22px;
   position: relative;
   outline: none;
+  font-size: 14px;
+
   &::after {
     display: none;
   }
@@ -32,7 +34,7 @@
 
   > a {
     box-sizing: border-box;
-    padding: 0 8px;
+    padding: 0 16px;
     margin: 0;
     font-weight: 600;
     letter-spacing: .75px;
@@ -88,17 +90,18 @@
 ****************************************
 */
 #status\.scm\.0 {
-  z-index: var(--source-control-order);
-  order: var(--source-control-order);
+  --order: var(--source-control-order);
+  z-index: var(--order);
+  order: var(--order);
   position: relative;
-  left: calc(var(--status-bar-height) / 2 * 5);
+  left: calc(var(--status-bar-height) / 2 * (calc(var(--right-items-count) - calc(var(--order) - var(--left-items-count)))));
   padding-left: calc(var(--status-bar-height) / 2);
   margin-right: 0;
   --bg-color: var(--vim-normal-color);
 
   > a {
     box-sizing: border-box;
-    padding: 4px 24px 0 8px;
+    padding: 2px 24px 0 8px;
     margin: 0;
     font-weight: 600;
     letter-spacing: .75px;
@@ -148,10 +151,11 @@
 ****************************************
 */
 #status\.editor\.selection {
-  z-index: var(--editor-selection-order);
-  order: var(--editor-selection-order);
+  --order: var(--editor-selection-order);
+  z-index: var(--order);
+  order: var(--order);
   position: relative;
-  left: calc(var(--status-bar-height) / 2 * 4);
+  left: calc(var(--status-bar-height) / 2 * (calc(var(--right-items-count) - calc(var(--order) - var(--left-items-count)))));
   inline-size: 180px;
   padding-left: calc(var(--status-bar-height) / 2);
   margin-right: 0;
@@ -160,7 +164,7 @@
   > a {
     justify-content: center;
     box-sizing: border-box;
-    padding: 4px 24px 0 8px;
+    padding: 2px 24px 0 8px;
     margin: 0;
     font-weight: 600;
     background: var(--bg-color);
@@ -184,17 +188,18 @@
 ****************************************
 */
 #status\.problems {
-  z-index: var(--problems-order);
-  order: var(--problems-order);
+  --order: var(--problems-order);
+  z-index: var(--order);
+  order: var(--order);
   position: relative;
-  left: calc(var(--status-bar-height) / 2 * 3);
+  left: calc(var(--status-bar-height) / 2 * (calc(var(--right-items-count) - calc(var(--order) - var(--left-items-count)))));
   padding-left: calc(var(--status-bar-height) / 2);
   margin-right: 0;
   --bg-color: var(--color-status-bar-segment-2);
 
   > a {
     box-sizing: border-box;
-    padding: 4px 24px 0 8px;
+    padding: 2px 24px 0 8px;
     margin: 0;
     font-weight: 600;
     letter-spacing: .75px;
@@ -225,56 +230,21 @@
 ****************************************
 */
 #Compulim\.vscode-clock {
-  z-index: var(--clock-order);
-  order: var(--clock-order);
+  --order: var(--clock-order);
+  z-index: var(--order);
+  order: var(--order);
   position: relative;
-  left: calc(var(--status-bar-height) / 2 * 2);
+  left: calc(var(--status-bar-height) / 2 * (calc(var(--right-items-count) - calc(var(--order) - var(--left-items-count)))));
   padding-left: calc(var(--status-bar-height) / 2);
   margin-right: 0;
   --bg-color: var(--color-status-bar-segment-1);
 
   > a {
     box-sizing: border-box;
-    padding: 4px 24px 0 8px;
+    padding: 2px 16px 0 8px;
     margin: 0;
     font-weight: 600;
     letter-spacing: .75px;
-    background: var(--bg-color);
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: -1px;
-    left: 0px;
-    width: calc(var(--status-bar-height) / 2 + 1px);
-    height: calc(100% + 2px);
-    clip-path: polygon(100% 0%, 0 50%,100% 100%);
-    background: var(--bg-color);
-  }
-}
-
-/*
-****************************************
-* battery
-****************************************
-*/
-#fbosch\.battery-indicator {
-  z-index: var(--battery-order);
-  order: var(--battery-order);
-  position: relative;
-  left: calc(var(--status-bar-height) / 2);
-  padding-left: calc(var(--status-bar-height) / 2);
-  margin-right: 0;
-  --bg-color: var(--color-status-bar-segment-2);
-
-  > a {
-    box-sizing: border-box;
-    padding: 4px 16px 0 8px;
-    margin: 0;
-    font-weight: 600;
-    letter-spacing: .75px;
-    color: unset !important;
     background: var(--bg-color);
   }
 
