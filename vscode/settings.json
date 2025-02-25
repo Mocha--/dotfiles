@@ -25,6 +25,7 @@
   ],
   "custom-ui-style.electron": {
     "frame": false,
+    "transparent": true,
     "opacity": 0.96, // Range: 0-1 (To go fully transparent, set it to 0)
   },
   "breadcrumbs.enabled": false,
