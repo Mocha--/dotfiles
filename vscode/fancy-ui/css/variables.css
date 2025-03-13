@@ -17,7 +17,7 @@
   --color-vim-command: var(--color-4);
   --color-vim-search: var(--color-5);
   --color-quick-input-widget-bg: var(--color-6);
-  --color-quick-input-widget-textfield-bg: var(--color-4);
+  --color-quick-input-widget-textfield-bg: var(--color-10);
   --color-status-bar-item: var(--color-2);
 
   /* left items */

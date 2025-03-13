@@ -346,6 +346,12 @@
     "editorSuggestWidget.selectedBackground": "#7f4a5a40",
     "editorSuggestWidget.selectedForeground": "#6c938a",
     "tab.activeBackground": "#2f3e46",
+    "quickInput.background": "#2f3e46",
+    "quickInputList.focusBackground": "#6c938a25",
+    "list.focusAndSelectionOutline": "#ffffff00",
+    "list.activeSelectionBackground": "#6c938a25",
+    "list.inactiveSelectionBackground": "#6c938a20",
+    "list.hoverBackground": "#6c938a15"
   },
   "workbench.colorTheme": "Gruvbox Dark Medium",
   "workbench.editor.enablePreview": false,

@@ -18,3 +18,7 @@
 .scm-view .monaco-list-row .monaco-icon-label-container {
   height: unset !important;
 }
+
+.monaco-scrollable-element>.scrollbar>.slider {
+  border-radius: 5px; /* width is 10px */
+}
