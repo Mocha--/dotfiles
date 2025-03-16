@@ -87,6 +87,11 @@ run = ['move-node-to-workspace 1']
 if.app-id = 'com.google.Chrome'
 run = ['move-node-to-workspace 1']
 
+# on Arc open
+[[on-window-detected]]
+if.app-id = 'company.thebrowser.Browser'
+run = ['move-node-to-workspace 1']
+
 # on Safari open
 [[on-window-detected]]
 if.app-id = 'com.apple.Safari'
