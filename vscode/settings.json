@@ -86,6 +86,10 @@
   "explorer.confirmDelete": false,
   "explorer.openEditors.visible": 1,
   "extensions.ignoreRecommendations": true,
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontWeight": 600,
+  "terminal.integrated.lineHeight": 1.2,
+  "terminal.integrated.fontFamily": "Hack Nerd Font",
   "files.associations": {
     "*.css": "css",
     "*.json": "jsonc"
@@ -373,4 +377,5 @@
     "ecsRunCommand": true
   },
   "terminal.integrated.shellIntegration.enabled": true,
+  "eslint.useFlatConfig": true
 }
