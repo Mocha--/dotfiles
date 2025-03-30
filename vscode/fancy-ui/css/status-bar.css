@@ -103,7 +103,7 @@
 
   > a {
     box-sizing: border-box;
-    padding: 2px 8px 0;
+    padding-inline: 8px;
     margin: 0;
     font-weight: 600;
     letter-spacing: .75px;
@@ -111,7 +111,6 @@
 
     > .codicon {
       position: relative;
-      bottom: 1px;
       font-weight: 600;
     }
   }
@@ -175,7 +174,7 @@
   > a {
     justify-content: center;
     box-sizing: border-box;
-    padding: 2px 8px 0;
+    padding-inline: 8px;
     margin: 0;
     font-weight: 600;
     background: var(--bg-color);
@@ -219,7 +218,7 @@
 
   > a {
     box-sizing: border-box;
-    padding: 2px 8px 0;
+    padding-inline: 8px;
     margin: 0;
     font-weight: 600;
     letter-spacing: .75px;
@@ -227,7 +226,6 @@
 
     > .codicon {
       position: relative;
-      bottom: 1px;
       font-weight: 600;
     }
   }
@@ -270,7 +268,7 @@
 
   > a {
     box-sizing: border-box;
-    padding: 2px 8px 0;
+    padding-inline: 8px;
     margin: 0;
     font-weight: 600;
     letter-spacing: .75px;
