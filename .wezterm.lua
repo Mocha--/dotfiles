@@ -45,7 +45,7 @@ config.colors = {
 }
 
 -- Font
-config.font = wezterm.font("Fira Code", { weight = "DemiBold" })
+config.font = wezterm.font("Maple Mono NF CN", { weight = "DemiBold" })
 config.font_size = 16
 config.line_height = 1.2
 config.cell_width = 1
