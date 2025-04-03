@@ -22,6 +22,7 @@
     "file:///Users/xibo.wang/projects/dotfiles/vscode/fancy-ui/css/status-bar.css",
     "file:///Users/xibo.wang/projects/dotfiles/vscode/fancy-ui/css/miscellaneous.css",
     "file:///Users/xibo.wang/projects/dotfiles/vscode/fancy-ui/css/minimap.css",
+    "file:///Users/xibo.wang/projects/dotfiles/vscode/fancy-ui/css/chat-side-bar.css"
   ],
   "custom-ui-style.electron": {
     "frame": false,
@@ -142,6 +143,7 @@
     "BUG:",
     "IDEA:",
     "REVIEW:",
+    "[TODO]",
     {
       "backgroundColor": "transparent",
       "color": "#FB4934",
