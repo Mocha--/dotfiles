@@ -10,15 +10,16 @@
   --color-9: #6c938a;
   --color-10: #354f52;
   --color-11: #2f3e46;
+  --color-12: #3e6868;
 
-  --color-vim-normal: var(--color-2);
-  --color-vim-insert: var(--color-8);
+  --color-vim-normal: var(--color-12);
+  --color-vim-insert: var(--color-2);
   --color-vim-visual: var(--color-3);
   --color-vim-command: var(--color-4);
   --color-vim-search: var(--color-5);
   --color-quick-input-widget-bg: var(--color-6);
-  --color-quick-input-widget-textfield-bg: var(--color-10);
-  --color-status-bar-item: var(--color-2);
+  --color-quick-input-widget-textfield-bg: var(--color-12);
+  --color-status-bar-item: var(--color-12);
 
   /* left items */
   --left-items-count: 2;
