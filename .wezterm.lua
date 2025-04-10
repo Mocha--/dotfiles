@@ -12,8 +12,8 @@ local INACTIVE_TAB_BG_COLOR = "#505050"
 local INACTIVE_TAB_FG_COLOR = "#999999"
 local TAB_HOVER_BG_COLOR = "#808080"
 local TAB_HOVER_FG_COLOR = "#cccccc"
-local ACTIVE_TAB_BG_COLOR = "#7f4a5a"
-local ACTIVE_TAB_FG_COLOR = "#ffffff"
+local ACTIVE_TAB_BG_COLOR = "#3e6868"
+local ACTIVE_TAB_FG_COLOR = "#e8d8c9"
 local CURSOR_COLOR = "#dddddd"
 
 -- General
