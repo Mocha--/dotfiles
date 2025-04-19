@@ -1,22 +1,10 @@
 return {
-  {
-    "folke/tokyonight.nvim",
-    opts = {
-      transparent = true,
-      styles = {
-        sidebars = "transparent",
-        floats = "transparent",
-      },
-    },
-  },
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000, opts = { flavour = "macchiato" } },
-  { "rebelot/kanagawa.nvim", name = "kanagawa" },
-  { "luisiacc/gruvbox-baby" },
+  { "ellisonleao/gruvbox.nvim", name = "gruvbox", priority = 1000, config = true },
 
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "kanagawa",
+      colorscheme = "gruvbox",
     },
   },
 }
