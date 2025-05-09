@@ -27,14 +27,14 @@
   "custom-ui-style.electron": {
     "frame": false,
     "transparent": true,
-    "opacity": 0.96, // Range: 0-1 (To go fully transparent, set it to 0)
+    "opacity": 0.96 // Range: 0-1 (To go fully transparent, set it to 0)
   },
   "breadcrumbs.enabled": false,
   "breadcrumbs.filePath": "last",
   "clock.dateFormat": "HH:MM",
   "color-highlight.matchWords": false,
   "diffEditor.ignoreTrimWhitespace": false,
-  "editor.acceptSuggestionOnEnter": "off",
+  "editor.acceptSuggestionOnEnter": "on",
   "editor.accessibilitySupport": "off",
   "editor.autoClosingDelete": "always",
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
