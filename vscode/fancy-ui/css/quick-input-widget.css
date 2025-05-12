@@ -1,4 +1,4 @@
-.quick-input-widget {
+.quick-input-widget.show-file-icons {
   --quick-input-widget-width: 1280px;
   --quick-input-widget-height: 56%;
   inset: 0 !important;
