@@ -135,6 +135,7 @@ alias vim=nvim
 alias c=clear
 alias e=exit
 alias g=google
+alias ge=gemini
 alias gl='git lg'
 alias glog='git lg'
 alias co=cursor
