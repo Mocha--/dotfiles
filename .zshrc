@@ -160,6 +160,7 @@ alias ls='lsd'
 # vudoo alias
 alias vudoo_clear_redis='sh ~/projects/vudoo-sql-scripts/utils/clear-redis.sh'
 alias vudoo_update_db='(cd ~/projects/vudoo && docker compose run --rm update-db)'
+alias vudoo_start_server='(cd ~/projects/vudoo && (docker compose up & pnpm run ad-center:start))'
 
 # dashboard 105893
 alias vudoo_use_shopify_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-shopify.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
