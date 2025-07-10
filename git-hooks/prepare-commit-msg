@@ -1,0 +1,33 @@
+#!/bin/sh
+
+# If this is a merge commit, exit without doing anything
+if [ "$2" = "merge" ]; then
+  exit 0
+fi
+
+# Run the AI script and store the output
+echo "🤖  creating ai commit message..."
+AI_MSG=$(node .husky/ai-commit-message.js 2>/dev/null) || AI_MSG=""
+if [ $? -ne 0 ]; then
+  AI_MSG=""
+fi
+echo "ai commit message: $AI_MSG"
+
+# Create a temporary file
+TMP_FILE=$(mktemp)
+
+# Only write AI_MSG if it's not empty
+if [ -n "$AI_MSG" ]; then
+  printf "%s" "$AI_MSG" > "$TMP_FILE"
+else
+  > "$TMP_FILE"
+fi
+
+# Append the original commit message to the temporary file
+cat "$1" >> "$TMP_FILE"
+
+# Overwrite the original commit message file with the content of the temporary file
+cat "$TMP_FILE" > "$1"
+
+# Remove the temporary file
+rm "$TMP_FILE"
