@@ -135,12 +135,22 @@ run = ['move-node-to-workspace 4']
 # on sequel-ace open
 [[on-window-detected]]
 if.app-id = 'com.sequel-ace.sequel-ace'
-run = ['move-node-to-workspace 4']
+run = ['move-node-to-workspace 1']
 
 # on YoutubeMusic open
 [[on-window-detected]]
 if.app-id = 'com.google.Chrome.app.cinhimbnkkaeohfgghhklpknlkffjgod'
 run = ['move-node-to-workspace 5']
+
+# on Claude open
+[[on-window-detected]]
+if.app-id = 'com.anthropic.claudefordesktop'
+run = ['move-node-to-workspace 4']
+
+# on Google Meet open
+[[on-window-detected]]
+if.app-id = 'com.google.Chrome.app.kjgfgldnnfoeklkmfkjfagphfepbbdan'
+run = ['move-node-to-workspace 1']
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
