@@ -151,6 +151,7 @@ alias dc='docker compose'
 alias ghcs='gh copilot suggest'
 alias ghce='gh copilot explain'
 alias sktrl='sketchybar --reload'
+alias gacp='ga . && gc && ggp'
 
 # browser tools server
 alias browser_tools_server_start='npx @agentdeskai/browser-tools-server@1.2.0'
