@@ -165,7 +165,6 @@
   "typescript.preferences.jsxAttributeCompletionStyle": "none",
   "typescript.suggest.autoImports": false,
   "typescript.updateImportsOnFileMove.enabled": "never",
-  "update.mode": "manual",
   "vim.easymotion": true,
   "vim.easymotionMarkerBackgroundColor": "#7f4a5a",
   "vim.easymotionMarkerForegroundColorOneChar": "#6c938a",
@@ -216,10 +215,10 @@
     {
       "after": [
         "3",
-        "b"
+        "e"
       ],
       "before": [
-        "B"
+        "E",
       ]
     },
     {
@@ -293,9 +292,27 @@
         "s"
       ],
       "before": [
-        "<space>"
+        "s"
       ]
-    }
+    },
+    {
+      "after": [
+        "3",
+        "w"
+      ],
+      "before": [
+        "W"
+      ]
+    },
+    {
+      "after": [
+        "3",
+        "e"
+      ],
+      "before": [
+        "E",
+      ]
+    },
   ],
   "vim.searchHighlightColor": "#7f4a5a",
   "vim.useSystemClipboard": true,
@@ -320,27 +337,8 @@
         "K"
       ]
     },
-    {
-      "after": [
-        "3",
-        "w"
-      ],
-      "before": [
-        "W"
-      ]
-    },
-    {
-      "after": [
-        "3",
-        "b"
-      ],
-      "before": [
-        "B"
-      ]
-    }
   ],
   "window.commandCenter": false,
-  "window.customTitleBarVisibility": "never",
   "window.newWindowDimensions": "default",
   "window.titleBarStyle": "native",
   "workbench.activityBar.iconClickBehavior": "focus",
@@ -372,10 +370,10 @@
     "list.inactiveSelectionBackground": "#6c938a20",
     "list.hoverBackground": "#6c938a15"
   },
-  "workbench.colorTheme": "Gruvbox Dark Medium",
   "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "bearded-icons",
   "workbench.layoutControl.enabled": false,
+  "window.customTitleBarVisibility": "never",
   "workbench.productIconTheme": "fluent-icons",
   "workbench.startupEditor": "none",
   "workbench.tips.enabled": false,
@@ -392,5 +390,23 @@
     "ecsRunCommand": true
   },
   "terminal.integrated.shellIntegration.enabled": true,
-  "eslint.useFlatConfig": true
+  "eslint.useFlatConfig": true,
+  "workbench.colorTheme": "Gruvbox Dark Medium",
+  "workbench.editorAssociations": {
+    "*.svg": "default"
+  },
+  "svelte.enable-ts-plugin": true,
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "totalTypeScript.hideAllTips": true,
+  "totalTypeScript.hideBasicTips": true,
+  "json.schemaDownload.enable": true,
+  "cursor.composer.shouldChimeAfterChatFinishes": true,
 }
