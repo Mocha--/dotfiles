@@ -49,11 +49,6 @@
         "key": "shift+cmd+g",
         "command": "workbench.view.scm",
         "when": "workbench.scm.active"
-    },
-    {
-        "key": "ctrl+shift+g",
-        "command": "-workbench.view.scm",
-        "when": "workbench.scm.active"
     }, {
         "key": "shift+cmd+e",
         "command": "workbench.view.explorer"
@@ -61,11 +56,11 @@
         "key": "shift+cmd+x",
         "command": "workbench.view.extensions"
     }, {
-        "key": "ctrl+l",
+        "key": "alt+l",
         "command": "workbench.action.focusFirstEditorGroup"
     },
     {
-        "key": "ctrl+h",
+        "key": "alt+h",
         "command": "workbench.action.focusSideBar"
     },{
         "key": "cmd+o",
@@ -92,10 +87,6 @@
         "command": "workbench.view.extension.todo-tree-container"
     },
     {
-        "key": "alt+p",
-        "command": "extension.cssrem.rem-switch-px"
-    },
-    {
         "key": "alt+z",
         "command": "-extension.cssrem.rem-switch-px"
     },
@@ -109,18 +100,47 @@
         "command": "workbench.view.extension.references-view"
     },
     {
-        "key": "ctrl+l",
-        "command": "-notebook.centerActiveCell",
-        "when": "notebookEditorFocused"
-    },
-    {
-        "key": "ctrl+cmd+r",
-        "command": "references-view.findReferences",
-        "when": "editorHasReferenceProvider"
-    },
-    {
         "key": "shift+alt+f12",
         "command": "-references-view.findReferences",
         "when": "editorHasReferenceProvider"
+    },
+    {
+        "key": "alt+z",
+        "command": "-workbench.action.terminal.sizeToContentWidth",
+        "when": "terminalFocus && terminalHasBeenCreated && terminalIsOpen || terminalFocus && terminalIsOpen && terminalProcessSupported"
+    },
+    {
+        "key": "alt+z",
+        "command": "-editor.action.toggleWordWrap"
+    },
+    {
+        "key": "alt+r",
+        "command": "-extension.cssrem.rpx-switch-px"
+    },
+    {
+        "key": "alt+p",
+        "command": "extension.cssrem.rem-switch-px"
+    },
+    {
+        "key": "cmd+i",
+        "command": "composerMode.agent"
+    },
+    {
+        "key": "cmd+e",
+        "command": "-cursor.toggleAgentWindowIDEUnification",
+        "when": "cursor.agentIdeUnification.featureGate && workbenchState != 'empty'"
+    },
+    {
+        "key": "cmd+l",
+        "command": "composerMode.plan"
+    },
+    {
+        "key": "cmd+j",
+        "command": "-workbench.action.togglePanel",
+        "when": "!isAuxiliaryWindowFocusedContext"
+    },
+    {
+        "key": "cmd+j",
+        "command": "composerMode.chat"
     }
 ]
