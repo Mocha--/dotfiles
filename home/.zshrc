@@ -1,16 +1,9 @@
+
 # Kiro CLI pre block. Keep at the top of this file.
 [[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh"
-# Q pre block. Keep at the top of this file.
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-    source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/xibo.wang/.oh-my-zsh
+export ZSH=/Users/xibowang/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -63,12 +56,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
 # Environment Variables
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/usr/local/Cellar/mysql-client/8.0.31/bin"
 export PATH="/opt/homebrew/bin:$PATH"
-export NVM_AUTO_USE=true
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Source local secrets and configurations
 if [ -f ~/.zshrc.local ]; then
@@ -81,20 +69,18 @@ fi
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     git
-    #autojump
-    extract
-    zsh-nvm
-    web-search
+    # extract
+    # zsh-nvm
+    # web-search
     #npm
-    docker
-    docker-compose
+    #docker
+    #docker-compose
     #zsh-better-npm-completion
     #zsh-autosuggestions
     #zsh-completions
     zsh-syntax-highlighting
     you-should-use
     #pnpm
-    #k
 )
 
 # User configuration
@@ -139,94 +125,21 @@ eval "$(zoxide init zsh)"
 alias vim=nvim
 alias c=clear
 alias e=exit
-alias g=google
-alias ge=gemini
 alias gl='git lg'
 alias glog='git lg'
 alias co=cursor
 alias cl=agent
 alias clp='agent --plan'
-alias python=python3
 alias p='pnpm'
-alias dc='docker compose'
-alias ghcs='gh copilot suggest'
-alias ghce='gh copilot explain'
 alias sktrl='sketchybar --reload'
 alias gacp='ga . && gc && ggp'
-
-# browser tools server
-alias browser_tools_server_start='npx @agentdeskai/browser-tools-server@1.2.0'
 
 # lsd
 alias ls='lsd'
 
-# vudoo alias
-alias vudoo_clear_redis='sh ~/projects/vudoo-sql-scripts/utils/clear-redis.sh'
-alias vudoo_update_db='(cd ~/projects/vudoo && docker compose run --rm update-db)'
-alias vudoo_start_server='(cd ~/projects/vudoo && (docker compose up & pnpm run ad-center:start))'
-
-# dashboard 105893
-# alias vudoo_use_shopify_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-shopify.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
-# alias vudoo_use_salesforce_braintree_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-salesforce-braintree.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
-# alias vudoo_use_salesforce_adyen_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-salesforce-adyen.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
-# alias vudoo_use_bigcommerce_stripe_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-bigcommerce-stripe.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
-# alias vudoo_use_bigcommerce_adyen_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-bigcommerce-adyen.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
-# alias vudoo_use_magento_stripe_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-magento-stripe.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
-# alias vudoo_use_magento_braintree_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-magento-braintree.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
-# alias vudoo_use_magento_adyen_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-magento-adyen.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
-# alias vudoo_use_magento_cybersource_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-magento-cybersource.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
-# alias vudoo_use_amazon_product_advertising_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-amazon-product-advertising.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
-# alias vudoo_use_amazon_anywhere_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-amazon-anywhere.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
-# alias vudoo_use_hcl_braintree_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-hcl-braintree.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
-# alias vudoo_use_sap_adyen_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-sap-adyen.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
-# alias vudoo_use_commercetools_adyen_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-commercetools-adyen.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
-# alias vudoo_use_commercetools_braintree_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-commercetools-braintree.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
-# alias vudoo_use_commercetools_stripe_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-commercetools-stripe.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
-# alias vudoo_use_commercetools_paydock_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-commercetools-paydock.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
-# alias vudoo_use_commercetools_kmart_paydock_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-commercetools-kmart-paydock.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
-# alias vudoo_use_intelligent_reach_105893='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-intelligent-reach.sql sh ~/projects/vudoo-sql-scripts/105893.sh'
-# alias vudoo_clear_commerce_integration_105893='dashboardId=105893 sh ~/projects/vudoo-sql-scripts/utils/clear-commerce-integration.sh'
-
-# dashboard 108026
-alias vudoo_use_shopify_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-shopify.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
-alias vudoo_use_salesforce_braintree_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-salesforce-braintree.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
-alias vudoo_use_salesforce_adyen_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-salesforce-adyen.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
-alias vudoo_use_bigcommerce_stripe_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-bigcommerce-stripe.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
-alias vudoo_use_bigcommerce_adyen_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-bigcommerce-adyen.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
-alias vudoo_use_magento_stripe_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-magento-stripe.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
-alias vudoo_use_magento_braintree_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-magento-braintree.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
-alias vudoo_use_magento_adyen_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-magento-adyen.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
-alias vudoo_use_magento_cybersource_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-magento-cybersource.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
-alias vudoo_use_amazon_product_advertising_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-amazon-product-advertising.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
-alias vudoo_use_amazon_anywhere_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-amazon-anywhere.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
-alias vudoo_use_hcl_braintree_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-hcl-braintree.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
-alias vudoo_use_sap_adyen_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-sap-adyen.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
-alias vudoo_use_commercetools_adyen_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-commercetools-adyen.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
-alias vudoo_use_commercetools_braintree_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-commercetools-braintree.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
-alias vudoo_use_commercetools_stripe_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-commercetools-stripe.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
-alias vudoo_use_commercetools_paydock_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-commercetools-paydock.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
-alias vudoo_use_commercetools_kmart_paydock_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-commercetools-kmart-paydock.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
-alias vudoo_use_intelligent_reach_108026='sqlFilePath=/Users/xibo.wang/projects/vudoo-sql-scripts/sqls/use-intelligent-reach.sql sh ~/projects/vudoo-sql-scripts/108026.sh'
-alias vudoo_clear_commerce_integration_108026='dashboardId=108026 sh ~/projects/vudoo-sql-scripts/utils/clear-commerce-integration.sh'
-
-# bun completions
-[ -s "/Users/xibo.wang/.bun/_bun" ] && source "/Users/xibo.wang/.bun/_bun"
-
-# bun
-export BUN_INSTALL="/Users/xibo.wang/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-# yarn
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
-# vudoo Variables
-export AWS_DEFAULT_REGION=ap-southeast-2
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Q post block. Keep at the bottom of this file.
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # Kiro CLI post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh"
