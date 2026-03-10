@@ -31,7 +31,7 @@ done <<< "$apps"
 
 # If label is empty, return hyphens, otherwise return the label
 if [ -z "$label" ]; then
-    echo "---"
+    echo ""
 else
     echo "$label"
 fi
