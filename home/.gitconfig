@@ -1,0 +1,21 @@
+[user]
+    name = Xibo Wang
+    email = xibowangmelb@gmail.com
+	signingkey = FA9D0F0693B9428F
+    
+[includeIf "gitdir:~/projects/work"]
+    path = ~/.gitconfig-work
+
+[trace2]
+	eventTarget = af_unix:dgram:/tmp/olly-git-trace2.sock
+	configparams = remote.origin.url
+[core]
+	pager = diff-so-fancy | less --tabs=4 -RF
+[interactive]
+	diffFilter = diff-so-fancy --patch
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true
