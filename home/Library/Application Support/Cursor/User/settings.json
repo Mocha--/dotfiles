@@ -33,7 +33,6 @@
   },
   "breadcrumbs.enabled": false,
   "breadcrumbs.filePath": "last",
-  "clock.dateFormat": "HH:MM",
   "color-highlight.matchWords": false,
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.acceptSuggestionOnEnter": "on",
@@ -112,12 +111,6 @@
   },
   "files.autoSave": "off",
   "files.trimFinalNewlines": true,
-  "github.copilot.enable": {
-    "*": true,
-    "markdown": false,
-    "plaintext": false,
-    "scminput": false
-  },
   "javascript.updateImportsOnFileMove.enabled": "never",
   "notebook.breadcrumbs.showCodeCells": false,
   "redhat.telemetry.enabled": true,
@@ -125,7 +118,7 @@
   "scm.showIncomingChanges": "never",
   "scm.showOutgoingChanges": "never",
   "security.workspace.trust.untrustedFiles": "open",
-  "subtleBrackets.style": {
+  "subtleBrackets.style": { // [TODO]: check
     "borderColor": "#c56c86",
     "borderStyle": "solid none",
     "borderWidth": "2px"
@@ -393,16 +386,6 @@
   "workbench.colorTheme": "Gruvbox Dark Medium",
   "workbench.editorAssociations": {
     "*.svg": "default"
-  },
-  "svelte.enable-ts-plugin": true,
-  "[dockercompose]": {
-    "editor.insertSpaces": true,
-    "editor.tabSize": 2,
-    "editor.autoIndent": "advanced",
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
   },
   "totalTypeScript.hideAllTips": true,
   "totalTypeScript.hideBasicTips": true,
