@@ -1,4 +1,4 @@
-.sidebar {
+#workbench\.parts\.sidebar {
   border: 0 !important;
   font-size: 14px !important;
 
@@ -27,6 +27,11 @@
     .linematch {
       line-height: 40px !important; /* same as line item height */
     }
+  }
+
+  /* There is a padding from workbench css which pushes down the sidebar items */
+  > div:first-child {
+    padding: 0 !important;
   }
 
   /* Styles for the cursor element */
