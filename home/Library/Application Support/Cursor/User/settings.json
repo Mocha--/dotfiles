@@ -1,4 +1,5 @@
 {
+  "update.mode": "start",
   "[json]": {
     "editor.quickSuggestions": {
       "strings": true
@@ -6,23 +7,24 @@
     "editor.suggest.insertMode": "replace"
   },
   "friendly-ui.disableWorkbenchJs": true,
-  "friendly-ui.customJsPath": "~/projects/dotfiles/vscode/fancy-ui/js/overwrite-workbench.js",
+  "friendly-ui.customJsPath": "~/Library/Application Support/Cursor/User/customize-ui/js/overwrite-workbench.js",
   "custom-ui-style.reloadWithoutPrompting": true,
   "custom-ui-style.external.imports": [
-    "file:///Users/xibo.wang/projects/dotfiles/vscode/fancy-ui/css/variables.css",
-    "file:///Users/xibo.wang/projects/dotfiles/vscode/fancy-ui/css/global.css",
-    "file:///Users/xibo.wang/projects/dotfiles/vscode/fancy-ui/css/suggest-widget.css",
-    "file:///Users/xibo.wang/projects/dotfiles/vscode/fancy-ui/css/quick-input-widget.css",
-    "file:///Users/xibo.wang/projects/dotfiles/vscode/fancy-ui/css/quick-input-widget-backdrop.css",
-    // "file:///Users/xibo.wang/projects/dotfiles/vscode/fancy-ui/css/github-copilot-chat-window.css", // NOTE: not used in cursor
-    "file:///Users/xibo.wang/projects/dotfiles/vscode/fancy-ui/css/typescript-error.css",
-    "file:///Users/xibo.wang/projects/dotfiles/vscode/fancy-ui/css/side-bar.css",
-    "file:///Users/xibo.wang/projects/dotfiles/vscode/fancy-ui/css/tab-bar.css",
-    // "file:///Users/xibo.wang/projects/dotfiles/vscode/fancy-ui/css/welcome-page.css", // NOTE: not used in cursor
-    "file:///Users/xibo.wang/projects/dotfiles/vscode/fancy-ui/css/status-bar.css",
-    "file:///Users/xibo.wang/projects/dotfiles/vscode/fancy-ui/css/miscellaneous.css",
-    "file:///Users/xibo.wang/projects/dotfiles/vscode/fancy-ui/css/minimap.css",
-    "file:///Users/xibo.wang/projects/dotfiles/vscode/fancy-ui/css/chat-side-bar.css"
+    "file:///Users/xibowang/Library/Application Support/Cursor/User/customize-ui/js/overwrite-workbench.js",
+    "file:///Users/xibowang/Library/Application Support/Cursor/User/customize-ui/css/variables.css",
+    "file:///Users/xibowang/Library/Application Support/Cursor/User/customize-ui/css/global.css",
+    "file:///Users/xibowang/Library/Application Support/Cursor/User/customize-ui/css/suggest-widget.css",
+    "file:///Users/xibowang/Library/Application Support/Cursor/User/customize-ui/css/quick-input-widget.css",
+    "file:///Users/xibowang/Library/Application Support/Cursor/User/customize-ui/css/quick-input-widget-backdrop.css",
+    // "file:///Users/xibowang/Library/Application Support/Cursor/User/customize-ui/css/github-copilot-chat-window.css", // NOTE: not used in cursor
+    "file:///Users/xibowang/Library/Application Support/Cursor/User/customize-ui/css/typescript-error.css",
+    "file:///Users/xibowang/Library/Application Support/Cursor/User/customize-ui/css/side-bar.css",
+    "file:///Users/xibowang/Library/Application Support/Cursor/User/customize-ui/css/tab-bar.css",
+    // "file:///Users/xibowang/Library/Application Support/Cursor/User/customize-ui/css/welcome-page.css", // NOTE: not used in cursor
+    "file:///Users/xibowang/Library/Application Support/Cursor/User/customize-ui/css/status-bar.css",
+    "file:///Users/xibowang/Library/Application Support/Cursor/User/customize-ui/css/miscellaneous.css",
+    "file:///Users/xibowang/Library/Application Support/Cursor/User/customize-ui/css/minimap.css",
+    "file:///Users/xibowang/Library/Application Support/Cursor/User/customize-ui/css/chat-side-bar.css"
   ],
   "custom-ui-style.electron": {
     "frame": false,
@@ -379,9 +381,6 @@
   "workbench.tips.enabled": false,
   "workbench.tree.indent": 16,
   "workbench.tree.renderIndentGuides": "none",
-  "yaml.schemas": {
-    "file:///Users/xibo.wang/.vscode/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-  },
   "zenMode.centerLayout": false,
   "errorLens.enabled": true,
   "svg.preview.mode": "svg",
@@ -409,4 +408,12 @@
   "totalTypeScript.hideBasicTips": true,
   "json.schemaDownload.enable": true,
   "cursor.composer.shouldChimeAfterChatFinishes": true,
+  "extensions.allowed": {
+    "*": true
+  },
+  "cursor.cpp.disabledLanguages": [
+    "markdown",
+    "plaintext",
+    "scminput"
+  ],
 }
