@@ -10,7 +10,7 @@
   "friendly-ui.customJsPath": "~/Library/Application Support/Cursor/User/customize-ui/js/overwrite-workbench.js",
   "custom-ui-style.reloadWithoutPrompting": true,
   "custom-ui-style.external.imports": [
-    "file:///Users/xibowang/Library/Application Support/Cursor/User/customize-ui/js/overwrite-workbench.js",
+    "file:///Users/xibowang/Library/Application Support/Cursor/User/customize-ui/css/title-bar.css",
     "file:///Users/xibowang/Library/Application Support/Cursor/User/customize-ui/css/variables.css",
     "file:///Users/xibowang/Library/Application Support/Cursor/User/customize-ui/css/global.css",
     "file:///Users/xibowang/Library/Application Support/Cursor/User/customize-ui/css/suggest-widget.css",
