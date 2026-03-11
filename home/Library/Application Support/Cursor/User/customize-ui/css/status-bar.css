@@ -256,7 +256,7 @@
 * clock
 ****************************************
 */
-#Compulim\.vscode-clock {
+#rid9\.datetime {
   --order: var(--clock-order);
   z-index: var(--order);
   order: var(--order);
