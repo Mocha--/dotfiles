@@ -367,7 +367,6 @@
   },
   "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "bearded-icons",
-  "workbench.layoutControl.enabled": false,
   "window.customTitleBarVisibility": "never",
   "workbench.productIconTheme": "fluent-icons",
   "workbench.startupEditor": "none",
@@ -399,4 +398,5 @@
     "plaintext",
     "scminput"
   ],
+  "workbench.layoutControl.enabled": false,
 }
