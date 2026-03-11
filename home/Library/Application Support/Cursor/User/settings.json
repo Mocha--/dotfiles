@@ -53,7 +53,7 @@
   "editor.letterSpacing": 0.5,
   "editor.lineHeight": 28,
   "editor.linkedEditing": true,
-  "editor.matchBrackets": "never",
+  "editor.matchBrackets": "always",
   "editor.minimap.enabled": true,
   "editor.minimap.scale": 2,
   "editor.minimap.showSlider": "always",
@@ -118,11 +118,6 @@
   "scm.showIncomingChanges": "never",
   "scm.showOutgoingChanges": "never",
   "security.workspace.trust.untrustedFiles": "open",
-  "subtleBrackets.style": { // [TODO]: check
-    "borderColor": "#c56c86",
-    "borderStyle": "solid none",
-    "borderWidth": "2px"
-  },
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1",
     "CW_NEW_SESSION": "1",
@@ -363,7 +358,8 @@
     "list.focusAndSelectionOutline": "#ffffff00",
     "list.activeSelectionBackground": "#6c938a25",
     "list.inactiveSelectionBackground": "#6c938a20",
-    "list.hoverBackground": "#6c938a15"
+    "list.hoverBackground": "#6c938a15",
+    "editorBracketMatch.background": "#c56c8648",
   },
   "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "bearded-icons",
