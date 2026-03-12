@@ -6,12 +6,13 @@
   flex-direction: column;
   width: min(60%, var(--quick-input-widget-width)) !important;
   block-size: var(--quick-input-widget-height) !important;
-  padding: 16px;
+  padding: .5rem;
   border: 0 !important;
-  border-radius: 16px !important;
+  border-radius: 1rem !important;
   margin: auto !important;
   box-shadow: none !important;
   font-size: 14px !important;
+  transform: none !important;
 
   &:has(.quick-input-html-widget > .interactive-session) {
     --quick-input-widget-height: calc(100% - 80px);
@@ -52,6 +53,7 @@
 
         .monaco-list-row {
           padding: 0 8px !important;
+          margin: 0 !important;
 
           .quick-input-list-entry {
             display: flex;
