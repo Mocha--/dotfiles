@@ -1,6 +1,6 @@
 .quick-input-widget.show-file-icons {
   --quick-input-widget-width: 1280px;
-  --quick-input-widget-height: 56%;
+  --quick-input-widget-height: 36%;
   inset: 0 !important;
   display: flex;
   flex-direction: column;
