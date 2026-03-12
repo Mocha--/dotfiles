@@ -395,4 +395,5 @@
     "scminput"
   ],
   "workbench.layoutControl.enabled": false,
+  "editor.stickyScroll.enabled": false,
 }
