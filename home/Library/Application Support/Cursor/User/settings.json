@@ -396,4 +396,5 @@
   ],
   "workbench.layoutControl.enabled": false,
   "editor.stickyScroll.enabled": false,
+  "explorer.confirmDragAndDrop": false,
 }
