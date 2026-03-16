@@ -141,3 +141,7 @@ alias ls='lsd'
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export GPG_TTY=$(tty)
+# CoderEnv
+# DO NOT EDIT: Added by Coder CLI installer (https://coder.canva-internal.com/install.sh)
+[ -e "/Users/xibowang/.coder.sh" ] && . "/Users/xibowang/.coder.sh"
+# EndCoderEnv
