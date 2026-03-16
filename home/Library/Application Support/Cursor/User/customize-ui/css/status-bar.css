@@ -4,12 +4,13 @@
 ****************************************
 */
 #workbench\.parts\.statusbar {
+  --status-bar-color: #dddddd;
   --status-bar-height: 22px;
   --status-item-base-inline-offset: 3px;
   position: relative;
   outline: none;
   font-size: 14px;
-  color: #dddddd !important;
+  color: var(--status-bar-color) !important;
 
   &::after {
     display: none;
@@ -83,6 +84,108 @@
     font-weight: 600;
     font-size: 14px;
     letter-spacing: .75px;
+  }
+}
+
+/*
+****************************************
+* SSH remote host
+****************************************
+*/
+#status\.host {
+  --order: var(--ssh-remote-host);
+  z-index: var(--order);
+  order: var(--order);
+  position: relative;
+  left: calc(var(--status-item-base-inline-offset) * (calc(var(--right-items-count) - calc(var(--order) - var(--left-items-count)))));
+  padding-inline: calc(var(--status-bar-height) / 2);
+  margin-right: 0;
+  background: transparent !important; /* override default background */
+  color: var(--status-bar-color) !important;
+  --bg-color: var(--color-status-bar-item);
+
+  > a {
+    box-sizing: border-box;
+    padding-inline: 8px;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: .75px;
+    background: var(--bg-color);
+
+    > .codicon {
+      position: relative;
+      font-weight: 600;
+    }
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    width: calc(var(--status-bar-height) / 2 + 1px);
+    height: calc(100% + 2px);
+    background: var(--bg-color);
+  }
+
+  &::before {
+    right: 0;
+    clip-path: polygon(100% 0%, 0 50%, 100% 100%, 0 100%, 0 0);
+  }
+
+  &::after {
+    left: 0;
+    clip-path: polygon(100% 0%, 0 50%,100% 100%);
+  }
+}
+
+/*
+****************************************
+* Coder remote connection
+****************************************
+*/
+#coder\.coder-remote {
+  --order: var(--coder-remote-connection);
+  z-index: var(--order);
+  order: var(--order);
+  position: relative;
+  left: calc(var(--status-item-base-inline-offset) * (calc(var(--right-items-count) - calc(var(--order) - var(--left-items-count)))));
+  padding-inline: calc(var(--status-bar-height) / 2);
+  margin-right: 0;
+  --bg-color: var(--color-status-bar-item);
+
+  > a {
+    box-sizing: border-box;
+    padding-inline: 8px;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: .75px;
+    background: var(--bg-color);
+
+    > .codicon {
+      position: relative;
+      font-weight: 600;
+    }
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    width: calc(var(--status-bar-height) / 2 + 1px);
+    height: calc(100% + 2px);
+    background: var(--bg-color);
+  }
+
+  &::before {
+    right: 0;
+    clip-path: polygon(100% 0%, 0 50%, 100% 100%, 0 100%, 0 0);
+  }
+
+  &::after {
+    left: 0;
+    clip-path: polygon(100% 0%, 0 50%,100% 100%);
   }
 }
 

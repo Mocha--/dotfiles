@@ -27,11 +27,13 @@
   --vim-command-order: 2;
 
   /* right items */
-  --right-items-count: 4;
-  --source-control-order: 3;
-  --editor-selection-order: 4;
-  --problems-order: 5;
-  --clock-order: 6;
+  --right-items-count: 6;
+  --ssh-remote-host: 3;
+  --coder-remote-connection: 4;
+  --source-control-order: 5;
+  --editor-selection-order: 6;
+  --problems-order: 7;
+  --clock-order: 8;
   /* --github-copilot-order: 7;  */ /* NOTE: not in used */
 
   --color-attribute: hsla(280, 60%, 80%, 1); /* Lavender */
