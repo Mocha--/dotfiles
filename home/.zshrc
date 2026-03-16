@@ -137,6 +137,9 @@ alias gacp='ga . && gc && ggp'
 # lsd
 alias ls='lsd'
 
+# Canva
+alias coderXibo1='ssh coder.xibo-1'
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
