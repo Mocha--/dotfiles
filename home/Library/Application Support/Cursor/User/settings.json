@@ -397,4 +397,8 @@
   "workbench.layoutControl.enabled": false,
   "editor.stickyScroll.enabled": false,
   "explorer.confirmDragAndDrop": false,
+  "remote.SSH.remotePlatform": {
+    "coder-vscode.coder.canva-internal.com--xibowang--xibo-1.main": "linux"
+  },
+  "remote.SSH.connectTimeout": 1800,
 }
