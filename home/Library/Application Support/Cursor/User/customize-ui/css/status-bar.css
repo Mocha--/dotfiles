@@ -238,7 +238,10 @@
     clip-path: polygon(100% 0%, 0 50%,100% 100%);
   }
 
-  #workbench\.parts\.statusbar:has(#vscodevim\.vim\.primary[aria-label="-- INSERT --"]) & {
+  /**
+   * The following selectors are used to change the background color of the source control item based on the vim mode.
+   */
+  /* #workbench\.parts\.statusbar:has(#vscodevim\.vim\.primary[aria-label="-- INSERT --"]) & {
     --bg-color: var(--color-vim-insert);
   }
 
@@ -255,7 +258,7 @@
 
   #workbench\.parts\.statusbar:has(#vscodevim\.vim\.primary[aria-label^="/"], #vscodevim\.vim\.primary[aria-label^="-- EASYMOTION"]) & {
     --bg-color: var(--color-vim-search);
-  }
+  } */
 }
 
 /*
