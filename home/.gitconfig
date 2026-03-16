@@ -1,9 +1,9 @@
 [user]
     name = Xibo Wang
     email = xibowangmelb@gmail.com
-	signingkey = FA9D0F0693B9428F
+		signingkey = FA9D0F0693B9428F
     
-[includeIf "gitdir:~/projects/work"]
+[includeIf "gitdir:~/work"]
     path = ~/.gitconfig-work
 
 [trace2]
@@ -20,3 +20,10 @@
 	gpgsign = true
 [tag]
 	gpgSign = true
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[maintenance]
+	repo = /Users/xibowang/work/canva
