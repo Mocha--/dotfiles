@@ -144,3 +144,4 @@ alias coderXibo1='ssh coder.xibo-1'
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export GPG_TTY=$(tty)
+export PATH="$HOME/.local/bin:$PATH"
