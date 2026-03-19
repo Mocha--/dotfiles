@@ -27,3 +27,4 @@
 	process = git-lfs filter-process
 [maintenance]
 	repo = /Users/xibowang/work/canva
+	repo = /Users/xibowang/work/xibo-wang-dotfiles
