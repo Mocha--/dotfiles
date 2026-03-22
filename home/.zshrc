@@ -1,7 +1,3 @@
-
-# Kiro CLI pre block. Keep at the top of this file.
-[[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh"
-
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -128,8 +124,7 @@ alias e=exit
 alias gl='git lg'
 alias glog='git lg'
 alias co=cursor
-alias cl=agent
-alias clp='agent --plan'
+alias cl=claude
 alias p='pnpm'
 alias sktrl='sketchybar --reload'
 alias gacp='ga . && gc && ggp'
@@ -138,9 +133,7 @@ alias gacp='ga . && gc && ggp'
 alias ls='lsd'
 
 # Canva
-alias xiboCoder1='ssh coder.xibo-1'
-alias xiboCoder3='ssh coder.xibo-3'
-alias xiboCoder4='ssh coder.xibo-4'
+alias xiboDev1="ssh coder.xibo-dev-1"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
