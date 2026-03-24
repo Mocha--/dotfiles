@@ -137,6 +137,11 @@ run = ['move-node-to-workspace 4']
 if.app-id = 'com.sequel-ace.sequel-ace'
 run = ['move-node-to-workspace 1']
 
+# on Zen Browser open
+[[on-window-detected]]
+if.app-id = 'app.zen-browser.zen'
+run = ['move-node-to-workspace 5']
+
 # on YoutubeMusic open
 [[on-window-detected]]
 if.app-id = 'com.google.Chrome.app.cinhimbnkkaeohfgghhklpknlkffjgod'
