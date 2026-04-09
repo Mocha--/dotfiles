@@ -19,6 +19,7 @@ local CURSOR_COLOR = "#dddddd"
 -- General
 config.front_end = "WebGpu"
 config.mouse_wheel_scrolls_tabs = false
+config.notification_handling = "AlwaysShow"
 
 -- Key bindings
 config.keys = {
@@ -134,7 +135,7 @@ config.window_decorations = "RESIZE"
 config.window_background_opacity = 0.9
 config.macos_window_background_blur = 8
 config.window_padding = {
-	bottom = 8,
+	bottom = 16,
 	top = 8,
 	right = 8,
 	left = 8,
