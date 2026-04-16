@@ -5,7 +5,9 @@
       {
         "id": "9fc85f8e-7fbd-4d77-b9c5-a4e7d6065d80",
         "type": "current-working-dir",
-        "backgroundColor": "bgRed",
+        "color": "hex:282828",
+        "backgroundColor": "hex:CC241D",
+        "bold": true,
         "rawValue": true,
         "metadata": {
           "segments": "2",
@@ -15,20 +17,24 @@
       {
         "id": "1",
         "type": "model",
-        "color": "cyan",
+        "color": "hex:282828",
+        "backgroundColor": "bgBlue",
         "bold": false,
         "rawValue": true
       },
       {
         "id": "d73e1b3c-fadd-4f4a-ab5d-e44f6e9ea61a",
         "type": "thinking-effort",
-        "backgroundColor": "bgBrightRed",
+        "color": "hex:282828",
+        "backgroundColor": "bgMagenta",
         "rawValue": false
       },
       {
         "id": "00dc6eb5-081d-4f8f-be3c-2f2e55dd63dc",
         "type": "context-bar",
-        "backgroundColor": "bgBrightGreen",
+        "color": "hex:282828",
+        "backgroundColor": "bgBlue",
+        "bold": true,
         "rawValue": true,
         "metadata": {
           "display": "progress-short"
@@ -37,7 +43,8 @@
       {
         "id": "5",
         "type": "git-branch",
-        "color": "magenta",
+        "color": "hex:282828",
+        "backgroundColor": "bgBlack",
         "rawValue": false,
         "metadata": {
           "linkToGitHub": "false",
@@ -47,7 +54,8 @@
       {
         "id": "f073756f-6c06-4827-9f81-20c2c942aa16",
         "type": "git-pr",
-        "backgroundColor": "bgBrightBlack",
+        "color": "hex:282828",
+        "backgroundColor": "hex:CC241D",
         "rawValue": false,
         "metadata": {
           "hideStatus": "true",
@@ -78,7 +86,7 @@
     "endCaps": [
       ""
     ],
-    "theme": "gruvbox",
+    "theme": "custom",
     "autoAlign": true,
     "continueThemeAcrossLines": true
   }
