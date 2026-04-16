@@ -1,9 +1,76 @@
 {
+  "autoDreamEnabled": false,
+  "autoMemoryEnabled": true,
+  "enabledPlugins": {
+    "otter-tools@otter-marketplace": true,
+    "typescript-lsp@claude-plugins-official": true
+  },
   "env": {
     "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1",
     "CLAUDE_CODE_NO_FLICKER": "1",
+    "CLAUDE_CODE_SCROLL_SPEED": "8",
     "ENABLE_TOOL_SEARCH": "true"
   },
+  "hooks": {
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "command": "$HOME/.claude/notification-hook.sh",
+            "timeout": 10,
+            "type": "command"
+          }
+        ],
+        "matcher": "permission_prompt|elicitation_dialog"
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "command": "/usr/local/bin/otter agent-hook --agent claude-code --hook-event PostToolUse",
+            "type": "command"
+          }
+        ],
+        "matcher": ""
+      }
+    ],
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "command": "/usr/local/bin/otter agent-hook --agent claude-code --hook-event PreToolUse",
+            "type": "command"
+          }
+        ],
+        "matcher": ""
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "command": "/usr/local/bin/otter agent-hook --agent claude-code --hook-event SessionStart",
+            "type": "command"
+          }
+        ],
+        "matcher": ""
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "command": "$HOME/.claude/stop-hook.sh",
+            "timeout": 10,
+            "type": "command"
+          }
+        ],
+        "matcher": ""
+      }
+    ]
+  },
+  "model": "opus[1m]",
   "permissions": {
     "allow": [
       "Read",
@@ -15,44 +82,11 @@
     ],
     "defaultMode": "bypassPermissions"
   },
-  "model": "opus[1m]",
-  "hooks": {
-    "Notification": [
-      {
-        "matcher": "permission_prompt|elicitation_dialog",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "$HOME/.claude/notification-hook.sh",
-            "timeout": 10
-          }
-        ]
-      }
-    ],
-    "Stop": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "$HOME/.claude/stop-hook.sh",
-            "timeout": 10
-          }
-        ]
-      }
-    ]
-  },
-  "statusLine": {
-    "type": "command",
-    "command": "npx -y ccstatusline@latest",
-    "padding": 0
-  },
-  "enabledPlugins": {
-    "otter-tools@otter-marketplace": true,
-    "typescript-lsp@claude-plugins-official": true
-  },
-  "autoMemoryEnabled": true,
-  "autoDreamEnabled": false,
+  "skipAutoPermissionPrompt": true,
   "skipDangerousModePermissionPrompt": true,
-  "skipAutoPermissionPrompt": true
+  "statusLine": {
+    "command": "npx -y ccstatusline@latest",
+    "padding": 0,
+    "type": "command"
+  }
 }
