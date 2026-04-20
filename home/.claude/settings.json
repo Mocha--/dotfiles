@@ -3,8 +3,7 @@
     "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1",
     "CLAUDE_CODE_NO_FLICKER": "1",
     "CLAUDE_CODE_SCROLL_SPEED": "8",
-    "ENABLE_TOOL_SEARCH": "true",
-    "ECC_DISABLED_HOOKS": "stop:desktop-notify"
+    "ENABLE_TOOL_SEARCH": "true"
   },
   "permissions": {
     "allow": [
