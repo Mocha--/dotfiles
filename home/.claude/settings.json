@@ -31,39 +31,6 @@
         ]
       }
     ],
-    "PostToolUse": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/usr/local/bin/otter agent-hook --agent claude-code --hook-event PostToolUse"
-          }
-        ]
-      }
-    ],
-    "PreToolUse": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/usr/local/bin/otter agent-hook --agent claude-code --hook-event PreToolUse"
-          }
-        ]
-      }
-    ],
-    "SessionStart": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/usr/local/bin/otter agent-hook --agent claude-code --hook-event SessionStart"
-          }
-        ]
-      }
-    ],
     "Stop": [
       {
         "matcher": "",
