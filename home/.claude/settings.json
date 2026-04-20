@@ -85,13 +85,13 @@
   "enabledPlugins": {
     "otter-tools@otter-marketplace": true,
     "typescript-lsp@claude-plugins-official": true,
-    "everything-claude-code@everything-claude-code": true
+    "oh-my-claudecode@omc": true
   },
   "extraKnownMarketplaces": {
-    "everything-claude-code": {
+    "omc": {
       "source": {
         "source": "git",
-        "url": "https://github.com/affaan-m/everything-claude-code.git"
+        "url": "https://github.com/Yeachan-Heo/oh-my-claudecode.git"
       }
     }
   },
