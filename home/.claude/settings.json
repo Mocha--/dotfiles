@@ -83,7 +83,6 @@
     "padding": 0
   },
   "enabledPlugins": {
-    "otter-tools@otter-marketplace": true,
     "typescript-lsp@claude-plugins-official": true,
     "oh-my-claudecode@omc": true
   },
