@@ -3,6 +3,12 @@
   "lines": [
     [
       {
+        "id": "596f7fa2-295c-4d57-b7db-0a69b7164b4a",
+        "type": "custom-symbol",
+        "customSymbol": "",
+        "backgroundColor": "bgBrightBlack"
+      },
+      {
         "id": "9fc85f8e-7fbd-4d77-b9c5-a4e7d6065d80",
         "type": "current-working-dir",
         "color": "hex:282828",
