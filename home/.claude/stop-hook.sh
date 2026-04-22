@@ -1,5 +1,5 @@
 #! /bin/bash
 curl \
-  -H "Title: 🤖 Claude Code" \
-  -d '✅ Complete' \
-  ntfy.sh/xibo-claude-code
+  -H "Content-Type: application/json" \
+  -d '{"content": "✅ Complete"}' \
+  https://discordapp.com/api/webhooks/1496498917095768172/z0UTo2Lc1BbxHlTWU4pCSa9sUl3ApPVrTMeCFsjxRzmyQbEeBTOT0mVvOd7qoKQs8Zpn
