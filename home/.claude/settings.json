@@ -3,7 +3,10 @@
     "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1",
     "CLAUDE_CODE_NO_FLICKER": "1",
     "CLAUDE_CODE_SCROLL_SPEED": "8",
-    "ENABLE_TOOL_SEARCH": "true"
+    "ENABLE_TOOL_SEARCH": "true",
+    "CLAUDE_NOTIFY_WEBHOOK_URL": "https://hooks.slack.com/triggers/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",
+    "CLAUDE_NOTIFY_NOTIFICATION_PAYLOAD": "{\"origin\": \"🍎 Macbook\", \"message\": \"🚨 Waiting for input\"}",
+    "CLAUDE_NOTIFY_STOP_PAYLOAD": "{\"origin\": \"🍎 Macbook\", \"message\": \"✅ Complete\"}"
   },
   "permissions": {
     "allow": [
@@ -17,32 +20,6 @@
     "defaultMode": "bypassPermissions"
   },
   "model": "opus[1m]",
-  "hooks": {
-    "Notification": [
-      {
-        "matcher": "permission_prompt|elicitation_dialog",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "$HOME/.claude/notification-hook.sh",
-            "timeout": 10
-          }
-        ]
-      }
-    ],
-    "Stop": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "$HOME/.claude/stop-hook.sh",
-            "timeout": 10
-          }
-        ]
-      }
-    ]
-  },
   "statusLine": {
     "type": "command",
     "command": "npx -y ccstatusline@latest",
@@ -50,7 +27,8 @@
   },
   "enabledPlugins": {
     "typescript-lsp@claude-plugins-official": true,
-    "oh-my-claudecode@omc": true
+    "oh-my-claudecode@omc": true,
+    "claude-code-notify-plugin@mocha-plugins": true
   },
   "extraKnownMarketplaces": {
     "omc": {
@@ -58,10 +36,16 @@
         "source": "git",
         "url": "https://github.com/Yeachan-Heo/oh-my-claudecode.git"
       }
+    },
+    "mocha-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "Mocha--/claude-code-notify-plugin"
+      }
     }
   },
   "autoMemoryEnabled": true,
   "autoDreamEnabled": false,
   "skipDangerousModePermissionPrompt": true,
-  "skipAutoPermissionPrompt": true
+  "editorMode": "vim"
 }
