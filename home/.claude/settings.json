@@ -41,7 +41,8 @@
       "source": {
         "source": "github",
         "repo": "Mocha--/claude-code-notify-plugin"
-      }
+      },
+      "autoUpdate": true
     }
   },
   "autoMemoryEnabled": true,
