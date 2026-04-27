@@ -28,7 +28,8 @@
   "enabledPlugins": {
     "typescript-lsp@claude-plugins-official": true,
     "oh-my-claudecode@omc": true,
-    "claude-code-notify-plugin@mocha-plugins": true
+    "claude-code-notify-plugin@mocha-plugins": true,
+    "notion-workspace-plugin@notion-plugin-marketplace": true
   },
   "extraKnownMarketplaces": {
     "omc": {
@@ -43,6 +44,12 @@
         "repo": "Mocha--/claude-code-notify-plugin"
       },
       "autoUpdate": true
+    },
+    "notion-plugin-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "makenotion/claude-code-notion-plugin"
+      }
     }
   },
   "autoMemoryEnabled": true,
